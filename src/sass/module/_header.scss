@@ -1,0 +1,26 @@
+@use "global" as *;
+
+.header {
+    background-color: $red;
+    height: rem(40);
+    align-items: center; /* 子要素を上下中央に配置 */
+}
+
+.header__inner {    
+    max-width: rem(1410);
+    margin: auto;
+    padding: 0 rem(25);
+    height: rem(40);
+    display: flex; /* Flexboxを有効にする */
+    align-items: center; /* 子要素を上下中央に配置 */
+    justify-content: center;
+    @include mq(md){
+        justify-content: flex-start;
+    }
+}
+
+.header p {
+    color: $white;
+    font-size: rem(16);
+    font-family: "yu-gothic-pr6n", sans-serif;
+}
