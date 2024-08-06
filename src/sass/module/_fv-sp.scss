@@ -1,0 +1,72 @@
+@use "global" as *;
+
+.fv-sp {
+    background-image: url(../images/common/fv-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: rem(80);
+}
+
+.fv-sp__content {
+    max-width: rem(700);
+    margin: auto;
+    padding: 0 rem(25);
+}
+
+.fv-sp__title {
+    font-size: rem(32);
+    font-weight: $bold;
+    line-height: 1.85;
+}
+
+.fv-sp__span-head {
+    background-color: #231815;
+    color: $white;
+    padding: 0 rem(8) rem(1) ;
+}
+
+.fv-sp__span-bottom {
+    background-color: $red;
+    color: $white;
+    padding: 0 rem(4) rem(1) ;
+}
+
+.fv-sp__subtitle {
+    font-size: rem(20);
+    font-weight: $bold;
+    margin-top: rem(20);
+}
+
+.fv-sp__textBox {
+    margin-top: rem(10);
+    line-height: 1.7;
+}
+
+.fv-sp__text + .fv-sp__text {
+    margin-top: rem(20);
+}
+
+.fv-sp__text span{
+    font-weight: $bold;
+    background-color:#FFD5D5 ;
+}
+
+.fv-sp__text + .fv-sp__text{
+    margin-top: rem(20);
+}
+
+.fv-sp__title-img{
+    position: absolute;
+    bottom: -3.6%;
+}
+
+.fv-sp__img {
+    position: relative;
+    margin-top: rem(40);
+}
+
+.fv-sp__title-img {
+    position: absolute;
+    top: -7.1%;
+}

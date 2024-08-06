@@ -1,0 +1,91 @@
+@use "global" as *;
+
+.fv-pc{
+    font-family: $third-font-family;
+}
+
+.fv-pc__inner{
+    max-width: rem(1920);
+    margin: auto;
+    position: relative;
+}
+
+.fv-pc__flex{
+    display: flex;
+}
+
+.fv-pc__content{
+    background-image: url(../images/common/fv-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: rem(138) 0 0 0; 
+}
+
+.fv-pc__sentence{
+    max-width: rem(616);
+    margin: auto;
+    padding: 0 0.7% 0 4.35%;
+}
+
+.fv-pc__content,
+.fv-pc__img{
+    width: 50%;
+}
+
+.fv-pc__img img{
+    aspect-ratio:390/237;
+    width: 100%;
+    height: rem(900);
+    object-fit: cover;
+}
+
+.fv-pc__title{
+    font-size: rem(61);
+    font-weight: $bold;
+    line-height: 1.5;
+    white-space: nowrap;
+}
+
+.fv-pc__span-head{
+    background-color: #231815;
+    color: $white;
+    padding: rem(6) rem(19);
+}
+
+.fv-pc__span-bottom{
+    background-color: $red;
+    color: $white;
+    padding: rem(6) rem(9.5);
+}
+
+.fv-pc__subtitle{
+    font-size: rem(30);
+    font-weight: $bold;
+    margin-top: rem(69);
+    padding-left: rem(9);
+}
+
+.fv-pc__textBox{
+    margin-top: rem(20);
+    padding: 0 rem(33) 0 rem(9);
+    text-align: justify;
+}
+
+.fv-pc__text{
+    font-size: rem(16);
+}
+
+.fv-pc__text span{
+    font-weight: $bold;
+    background-color:#FFD5D5 ;
+}
+
+.fv-pc__text + .fv-pc__text{
+    margin-top: rem(20);
+}
+
+.fv-pc__title-img{
+    position: absolute;
+    bottom: -3.6%;
+}
