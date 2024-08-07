@@ -1,0 +1,14 @@
+@use "global" as *;
+
+.company{
+    background-color: red;
+    padding-top: rem(94);
+}
+
+.company__title{
+    background-image: url(../images/common/company-title.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: rem(13) 0;
+}

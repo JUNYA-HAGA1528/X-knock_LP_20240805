@@ -1,0 +1,134 @@
+@use "global" as *;
+
+.demand{
+    color: $white;
+    text-align: center;
+    background-image: url(../images/common/demand-bg-sp.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    @include mq(md){
+        background-image: url(../images/common/demand-bg.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        max-width: rem(1920);
+        margin: auto;
+    }
+}
+
+.demand__title{
+    background-color: $red;
+    font-size: rem(16);
+    padding: rem(9) 0;
+    font-weight: $bold;
+    font-family: $second;
+    @include mq(md){
+        font-size: rem(24);
+        padding: rem(12) 0;
+    }
+}
+
+.demand__inner{
+    max-width: $max-width;
+    margin: auto;
+    padding:0 rem(25) ;
+    @include mq(md){
+        max-width: rem(1230);
+    }
+}
+
+.demand__container{
+    padding: rem(40) 0;
+    @include mq(md){
+        padding: rem(61) 0 rem(129);
+    } 
+}
+
+.demand__subtitle{
+    font-family: $second;
+    font-size: rem(20);
+    font-weight: $bold;
+    letter-spacing: 0.03em;
+    @include mq(md){
+        font-size: rem(52);
+        letter-spacing: 0.07em;
+    }
+}
+
+.dots {
+    color: $red;
+    text-emphasis: dot $red;
+  }
+
+.demand__remarks{
+    margin-top: rem(20);
+    font-size: rem(16);
+    text-align: left;
+    @include mq(md){
+        margin-top: rem(60);
+        font-size: rem(20);
+    }
+}
+
+.demand__remarks span {
+    font-weight: $bold;
+}
+
+.demand__content{
+    margin-top: rem(20);
+    @include mq(md){
+        display: flex;
+        align-items: center;
+        gap: 0 rem(83);
+        margin-top: rem(40);
+    }
+}
+
+.demand__graph{
+    width: 100%;
+    @include mq(md){
+        width: 44.6%;
+    }
+}
+
+.demand__sentence{
+    width: 100%;
+    margin-top: rem(20);
+    font-size: rem(16);
+    text-align: left;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    @include mq(md){
+        width: 48.34%;
+        margin-top: 0;
+        line-height: 2;
+        font-size: rem(20);
+    }
+}
+
+.demand__text + .demand__text{
+    margin-top: rem(20);
+    @include mq(md){
+        margin-top: rem(30);
+    }
+}
+
+.demand__text span {
+    font-size: rem(22);
+    font-weight: $bold;
+}
+
+.company-card__source{
+    margin-top: rem(10);
+    display: flex;
+    justify-content: center;
+    font-size: rem(9);
+    @include mq(md){
+        font-size: rem(12);
+    }
+}
+
+.company-card__source-text{
+    text-decoration: underline;
+}
