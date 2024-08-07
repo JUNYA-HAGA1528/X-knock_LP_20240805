@@ -1,0 +1,10 @@
+@use "global" as *;
+
+.top-select{
+    padding-top: rem(40);
+    padding-bottom: rem(78);
+    @include mq(md){
+        padding-top: rem(80);
+        padding-bottom: rem(156);
+    }
+}

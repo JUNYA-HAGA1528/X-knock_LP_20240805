@@ -22,7 +22,7 @@
     font-size: rem(16);
     padding: rem(9) 0;
     font-weight: $bold;
-    font-family: $second;
+    font-family: $toppan;
     @include mq(md){
         font-size: rem(24);
         padding: rem(12) 0;
@@ -46,7 +46,7 @@
 }
 
 .demand__subtitle{
-    font-family: $second;
+    font-family: $toppan;
     font-size: rem(20);
     font-weight: $bold;
     letter-spacing: 0.03em;

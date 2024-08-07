@@ -1,0 +1,123 @@
+@use "global" as *;
+
+.select{
+    background-color: #f7f7f7;
+}
+
+.select__heading{
+    font-size: rem(58);
+    font-family: $baskervville;
+    max-width: rem(550);
+    margin: auto;
+    @include mq(md){
+        max-width: rem(1480);
+        font-size: rem(98);
+    }
+}
+
+.select__inner{
+    max-width: $max-width;
+    margin: auto;
+    padding: 0 rem(25);
+    @include mq(md){
+        max-width: rem(1230);
+    }
+}
+
+.select__head{
+    margin-top: rem(10);
+    text-align: justify;
+    border-bottom: solid 1px  #494949;
+    padding-bottom: rem(40);
+    @include mq(md){
+        margin-top: rem(20);
+        padding-bottom: rem(81);
+    }
+}
+
+.select__check{
+    font-family: $toppan;
+    color: $red;
+    font-size: rem(14);
+    font-weight: $bold;
+    display: inline-block;
+    position: relative;
+}
+
+.select__check::before {
+    content: "";/*線が表示される*/
+    width: rem(15.5);/*線の長さを指定*/
+    height: rem(3);/*線の太さを指定*/
+    /*「position」「top」「left」で、タイトルを基準に横線の位置を設定します。*/
+    background-color: $red;
+    position: absolute;
+    top: 50%;
+    left: rem(-22.5);/*0指定すると、文字の上に線が来る*/
+    @include mq(md){
+        width: rem(20);
+        left: rem(-30);
+        top: 42%;
+    }
+}
+
+.select__titleBox{
+    margin-top: rem(20);
+    line-height: 1.75;
+    @include mq(md){
+        margin-top: rem(4);
+        line-height: 1.5;
+    }
+}
+
+.select__title{
+    text-align: left;
+    font-family: $toppan;
+    background-color: $red;
+    color: $white;
+    font-size: rem(22);
+    font-weight: $bold;
+    display: inline;
+	box-decoration-break: clone;
+	-webkit-box-decoration-break: clone;
+    padding: rem(6) rem(10);
+    @include mq(md){
+        text-align: center;
+        font-size: rem(52);
+        padding: rem(9) rem(18);
+    }
+}
+
+.select__sentence{
+    margin-top: rem(20);
+    @include mq(md){
+        margin-top: rem(36);
+    }
+}
+
+.select__text{
+    font-size: rem(16);
+    line-height: 1.5;
+    @include mq(md){
+        font-size: rem(18);
+        line-height: 2;
+    }
+}
+
+.select__text + .select__text{
+    margin-top: rem(20);
+}
+
+.select__text span {
+    background-color: #FFD5D5;
+    font-weight: $bold;
+    font-size: rem(16);
+    @include mq(md){
+        font-size: rem(20);
+    }
+}
+
+.select__item{
+    margin-top: rem(40);
+    padding-bottom: rem(40);
+    border-bottom: solid 1px #494949 ;
+}

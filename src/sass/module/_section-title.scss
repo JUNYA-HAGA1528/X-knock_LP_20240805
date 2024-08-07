@@ -5,7 +5,7 @@
 }
 
 .section-title__en{
-    font-family: "Baskervville", serif;
+    font-family: $baskervville;
     color: $red;
     font-weight: $regular;
     font-size: rem(12);
@@ -15,12 +15,16 @@
 }
 
 .section-title__jp{
-    font-family: $second;
+    font-family: $toppan;
     font-size: rem(20);
     font-weight: $bold;
     @include mq(md){
         font-size: rem(52);
     }
+}
+
+.title-color{
+    color: $red;
 }
 
 .section-title--white,

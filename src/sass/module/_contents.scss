@@ -44,7 +44,7 @@
 }
 
 .contents__title {
-    font-family: "Baskervville", serif;
+    font-family: $baskervville;
     text-transform: capitalize;
     font-size: rem(42);
     font-weight: $regular;
