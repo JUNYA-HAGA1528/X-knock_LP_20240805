@@ -1,0 +1,51 @@
+@use "global" as *;
+
+.guidance-pc{
+    position: relative; /* 追加 */
+}
+
+.guidance-pc__wrapper{
+    display: flex;
+    gap: 0 rem(80);
+}
+
+.guidance-pc__subtitle{
+    font-family: $toppan;
+    color: $red;
+    font-size: rem(32);
+    font-weight: $bold;
+}
+
+.guidance-pc__text{
+    margin-top: rem(40);
+    font-size: rem(18);
+    line-height: 2;
+    letter-spacing: 0.04em;
+}
+
+.guidance-pc__text span {
+    background-color: #FFD5D5;
+    font-size: rem(20);
+    font-weight: $bold;
+}
+
+.guidance-pc__sentence{
+    width: 50.84%;
+}
+
+.guidance-pc__images{
+    width: 42.37%;
+}
+
+.guidance-pc__ima + .guidance-pc__ima{
+    margin-top: rem(40);
+}
+
+.guidance-pc__comment{
+    position: absolute;
+    top: -29%; /* 画像の位置を調整 */
+    left: 17.5%;
+    width: rem(119);
+    height: rem(117);
+    z-index: 10; /* 追加: 画像が上に表示されるようにする */
+}

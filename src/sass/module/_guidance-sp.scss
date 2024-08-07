@@ -1,0 +1,42 @@
+@use "global" as *;
+
+.guidance-sp__heading{
+    margin-top: rem(67);
+    position: relative;
+}
+
+.guidance-sp__comment{
+    position: absolute;
+    top: -190%;
+    left: rem(103);
+    width:rem(47) ;
+    height: rem(47);
+}
+
+.guidance-sp__subtitle{
+    font-family:$toppan ;
+    color: $red;
+    font-size: rem(18);
+    font-weight: $bold;
+}
+
+.guidance-sp__images{
+    margin-top: rem(20);
+}
+
+.guidance-sp__ima + .guidance-sp__ima{
+    margin-top: rem(10);
+}
+
+.guidance-sp__sentence{
+    margin-top: rem(20);
+}
+
+.guidance-sp__text{
+    font-size: rem(16);
+    font-weight: $regular;
+}
+
+.guidance-sp__text + .guidance-sp__text{
+    margin-top: rem(20);
+}

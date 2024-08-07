@@ -1,2 +1,23 @@
 @use "global" as *;
 
+.guidance__inner{
+    max-width: $max-width;
+    margin: auto;
+    padding: 0 rem(25);
+    @include mq(md){
+        max-width: rem(1230);
+    }
+}
+
+.guidance__content{
+    margin-top: rem(67);
+    @include mq(md){
+        margin-top: rem(164);
+    }
+}
+
+.guidance__topic{
+    @include mq(md){
+        margin-top: rem(100);
+    }
+}
