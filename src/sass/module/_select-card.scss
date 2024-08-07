@@ -63,11 +63,17 @@
 
 .select-card__text{
     font-size: rem(18);
-    line-height: 2.125;
+    line-height: 1.5;
+    @include mq(md){
+        line-height: 2.125;
+    }
 }
 
 .select-card__text span {
     background-color: #FFD5D5;
-    font-size: rem(20);
+    font-size: rem(16);
     font-weight: $bold;
+    @include mq(md){
+        font-size: rem(20);
+    }
 }

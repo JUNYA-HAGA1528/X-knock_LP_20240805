@@ -1,0 +1,100 @@
+@use "global" as *;
+
+.point__heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.point__line {
+    flex-grow: 1;
+    height: 1px;
+    background-color: $red;
+}
+
+.point__center {
+    font-weight: $regular;
+    color: $red;
+    font-family: $baskervville;
+    font-size: rem(58);
+    margin: 0 rem(40);
+    @include mq(md){
+        font-size: rem(98);
+        margin: 0 rem(108);
+    }
+}
+
+.point__inner{
+    max-width: $max-width;
+    margin: auto;
+    padding: 0 rem(25);
+    @include mq(md){
+        max-width: rem(1920);
+        padding: 0;
+    }
+}
+
+.point__content{
+    margin-top: rem(20);
+    @include mq(md){
+        margin-top: rem(40);
+        display: flex;
+        align-items: center;
+        gap: 0 rem(126);
+    }
+}
+
+.point__img{
+    width: 67.7%;
+    margin: auto;
+    @include mq(md){
+        width: 43.75%;
+        height: rem(440);
+        margin: 0;
+        object-fit: cover;
+    }
+}
+
+.point__img img {
+    aspect-ratio: 230/160;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    @include mq(md){
+        aspect-ratio: 630/440;
+    }
+}
+
+.point__sentence{
+    margin-top: rem(20);
+    font-size: rem(16);
+    font-weight:$regular;
+    line-height: 1.5;
+    @include mq(md){
+        width: 41.66%;
+        margin-top: 0;
+        font-size: rem(18);
+        line-height: 2.2;
+    }
+}
+
+.point__text + .point__text{
+    margin-top: rem(20);
+    @include mq(md){
+        margin-top: 0;
+    }
+}
+
+.point__text--margin{
+    @include mq(md){
+        margin-top: rem(40);
+    }
+}
+
+.point__text span {
+    font-size: rem(16);
+    background-color: #FFD5D5;
+    @include mq(md){
+        font-size: rem(20);
+    }
+}

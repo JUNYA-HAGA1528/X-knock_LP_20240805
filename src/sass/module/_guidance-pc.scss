@@ -25,8 +25,11 @@
 
 .guidance-pc__text span {
     background-color: #FFD5D5;
-    font-size: rem(20);
+    font-size: rem(16);
     font-weight: $bold;
+    @include mq(md){
+        font-size: rem(20);
+    }
 }
 
 .guidance-pc__sentence{

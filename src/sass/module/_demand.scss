@@ -115,8 +115,11 @@
 }
 
 .demand__text span {
-    font-size: rem(22);
-    font-weight: $bold;
+    font-size: rem(16);
+    @include mq(md){
+        font-size: rem(22);
+        font-weight: $bold;
+    }
 }
 
 .demand-card__source{
