@@ -1,0 +1,71 @@
+@use "global" as *;
+
+.table__container {
+    width: 100%;
+    overflow-x: auto; /* 横スクロールを許可 */
+    padding:0 rem(30) ;
+}
+
+.table__wrapper {
+    font-family: "Inter", sans-serif;
+    width: 100%;
+    min-width: 600px; /* テーブルの最低幅を設定 */
+    border-collapse: collapse;
+    font-size: rem(9.06);
+    font-weight: $bold;
+    letter-spacing: 0.09em;
+    text-align: center;
+    border-radius: 10px; /* 角を丸くする */
+    @include mq(md){
+        font-size: rem(18);
+        letter-spacing: 0.02em;
+    }
+}
+
+/* ヘッダーのスタイル */
+.table__wrapper thead th {
+    background-color: $red;
+    color: white;
+    padding: rem(5);
+    vertical-align: middle;
+    border: 1px solid #828282;
+    @include mq(md){
+        padding: rem(10);
+    }
+}
+
+/* テーブルのセルのスタイル */
+.table__wrapper tbody td {
+    border: 1px solid #828282;
+    padding: rem(5);
+    vertical-align: middle;
+    @include mq(md){
+        padding: rem(10);
+    }
+}
+
+/* テーブルの最初の列のスタイル */
+.table__wrapper tbody td:first-child {
+    background-color: #F5F5F5;
+    font-weight: bold;
+    text-align: left;
+    width: 20%;
+}
+
+/* 奇数行と偶数行の背景色 */
+.table__wrapper tbody tr:nth-child(odd) td:first-child {
+    background-color: #F5F5F5;
+}
+
+.table__wrapper tbody tr:nth-child(even) td:first-child {
+    background-color: #F5F5F5;
+}
+
+.table__center {
+    text-align: center !important; /* テキストを中央揃え */
+    vertical-align: middle !important; /* 垂直方向の中央揃え */
+}
+
+.table__left{
+    text-align: left;
+}

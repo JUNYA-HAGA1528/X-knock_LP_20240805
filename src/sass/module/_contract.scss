@@ -1,2 +1,67 @@
 @use "global" as *;
 
+.contract__head{
+    line-height: 1.75;
+    padding: 0 rem(25);
+    @include mq(md){
+        padding: 0;
+    }
+}
+
+.contract__head-text{
+    font-size: rem(16);
+    @include mq(md){
+        font-size: rem(18);
+    }
+}
+
+.contract__head-text + .contract__head-text{
+    margin-top: rem(20);
+    @include mq(md){
+        margin-top: 0;
+    }
+}
+
+.contract__bottom,
+.contract__bottom-sp{
+    margin-top:rem(20) ;
+    font-size: rem(16);
+    @include mq(md){
+        margin-top: rem(80);
+        font-size: rem(18);
+    }
+}
+
+.contract__bottom-sp{
+    padding: 0 rem(25);
+    @include mq(md){
+        padding: 0;
+    }
+}
+
+.contract__bottom-text + .contract__bottom-text,
+.contract__bottom-sp-text + .contract__bottom-sp-text{
+    margin-top: rem(20);
+    @include mq(md){
+        margin-top: rem(30);
+        line-height: 2;
+    }
+}
+
+.contract__table{
+    margin-top: rem(20);
+    @include mq(md){
+        margin-top: rem(80);
+    }
+}
+
+.contract__span-red {
+    color: $red;
+    font-weight: $bold;
+}
+
+.contract__span-pink{
+    background-color: $pink;
+    font-weight: $bold;
+}
+
