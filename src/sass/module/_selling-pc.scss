@@ -1,0 +1,49 @@
+@use "global" as *;
+
+
+.selling-pc__item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: rem(100);
+    margin-top: rem(82);
+}
+
+.selling-pc__item--reverse {
+    margin-left: auto;
+    flex-direction: row-reverse;
+}
+
+.selling-pc__sentence {
+    width: 30.55%;
+}
+
+.selling-pc__title {
+    font-family: $toppan;
+    font-size: rem(36);
+    font-weight: $bold;
+    padding-bottom: rem(30);
+}
+
+.selling-pc__text {
+    font-size: rem(18);
+    letter-spacing: 0.04em;
+    line-height: 2;
+}
+
+.selling-pc__text span {
+    font-weight: $bold;
+}
+
+.selling-pc__img {
+    width: 43.75%;
+    height: rem(335);
+    object-fit: cover;
+}
+
+.selling-pc__img img {
+    aspect-ratio: 630 / 335;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

@@ -1,0 +1,45 @@
+@use "global" as *;
+
+.selling-sp{
+    max-width: $max-width;
+    margin: auto;
+    padding: 0 rem(25);
+}
+
+.selling-sp__item + .selling-sp__item{
+    margin-top: rem(26);
+}
+
+.selling-sp__title{
+    text-align: center;
+    font-family: $toppan;
+    font-size: rem(20);
+    font-weight: $bold;
+}
+
+.selling-sp__img{
+    margin-top:rem(16) ;
+}
+
+.selling-sp__img img {
+    aspect-ratio: 340/181;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.selling-sp__sentence{
+    margin-top: rem(20);
+}
+
+.selling-sp__text{
+    font-size: rem(16);
+}
+
+.selling-sp__text span {
+    font-weight: $bold;
+}
+
+.selling-sp__text + .selling-sp__text{
+    margin-top: rem(20);
+}

@@ -1,0 +1,80 @@
+@use "global" as *;
+
+.selling__list {
+    margin-top: rem(46);
+}
+
+.selling__inner{
+    @include mq(md){
+        max-width: rem(1920);
+        margin: auto;
+    }
+}
+
+.selling__buttons {
+    text-align: center;
+    margin-top: rem(40);
+    @include mq(md){
+        margin-top: rem(93.5);
+    }
+}
+
+.selling__button {
+    background: #C28000;
+    position: relative;
+    color: $white;
+    font-size: rem(16);
+    font-weight: $bold;
+    width: rem(340);
+    padding: rem(13) 0;
+    border-radius: rem(5);
+    z-index: 1;
+    transition: 0.4s;
+    overflow: hidden;
+    @include mq(md){
+        font-size: rem(18);
+        padding: rem(16.5) 0;
+        width: rem(780);
+    }
+}
+
+.selling__button::before {
+    border-radius: rem(50);
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-color: #fff;
+    transform-origin: 100% 50%;
+    transform: scaleX(0);
+    transition: transform ease 0.4s;
+}
+
+
+.selling__button span::after {
+	background-image: url(../images/common/contents-arrow-white.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	content: "";
+    position: absolute;
+    top: 50%;
+    right: rem(14);
+    width: rem(14);
+	height: rem(14);
+	transform: translateY(-50%);
+	transition: 0.4s background-color;
+    @include mq(md){
+        right: rem(55);
+        width: rem(20);
+        height: rem(20);    
+    }
+}
+
+
+.selling__button:hover {
+    transform: scale(1.05);
+}
