@@ -34,7 +34,49 @@
 
 .flow__head{
     margin-top: rem(20);
+    padding: 0 rem(25);
     @include mq(md){
         margin-top: rem(40);
+        padding: 0;
+    }
+}
+
+.flow__head-text{
+    font-size: rem(16);
+    @include mq(md){
+        font-size: rem(18);
+        letter-spacing: 0.04em;
+    }
+}
+
+.flow__head-text + .flow__head-text{
+    margin-top: rem(20);
+    @include mq(md){
+        margin-top: rem(10);
+    }
+}
+
+.flow__list{
+    margin-top: rem(20);
+    padding: rem(20) rem(36) rem(40);
+    text-align: center;
+    background-image: url(../images/common/flow-list-bg-sp.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    @include mq(md){
+        margin-top: rem(40);
+        padding: rem(45) rem(71);
+        background-image: url(../images/common/flow-list-bg.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;    
+    }
+}
+
+.flow__contract{
+    margin-top: rem(40);
+    @include mq(md){
+        margin-top: rem(80);
     }
 }

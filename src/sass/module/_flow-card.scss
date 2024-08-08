@@ -1,0 +1,56 @@
+@use 'global' as *;
+
+.flow-card{
+    background-image: url(../images/common/flow-card-bg-sp.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    @include mq(md){
+        background-image: url(../images/common/flow-card-bg.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;    
+    }
+}
+
+.flow-card__head img {
+    width: rem(38);
+    height: rem(67);
+    margin: auto;
+}
+
+.flow-card__title{
+    margin-top: rem(2);
+    font-family: $toppan;
+    font-size: rem(20);
+    font-weight: $bold;
+}
+
+.flow-card__img{
+    width: 52.2%;
+    margin: rem(7) auto auto auto;
+}
+
+.flow-card__img img{
+    aspect-ratio: 128/128;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.flow-card__text{
+    margin-top: rem(20);
+    text-align: left;
+    font-size: rem(18);
+    font-weight: $regular;
+    line-height: calc(24/16);
+    line-height: 1.6;
+}
+
+.flow-card__text span {
+    background-color: $pink;
+    font-weight: $bold;
+}
+
+
+

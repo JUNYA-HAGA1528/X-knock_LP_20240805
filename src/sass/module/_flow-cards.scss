@@ -1,0 +1,81 @@
+@use 'global' as *;
+
+.flow-cards{
+    @include mq(md){
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.flow-cards__item{
+    background-color: $white;
+    padding:rem(15) rem(37) rem(35) ;
+    @include mq(md){
+        max-width: calc(33.3333% - 2.5rem * 2 / 3 );
+        width: 100%;
+        padding:rem(15) rem(37) rem(30) ;
+    }
+}
+
+.flow-cards__item + .flow-cards__item{
+    margin-top: rem(45);
+    @include mq(md){
+        margin-top: 0;
+        margin-left: rem(40);
+    }
+}
+
+/* 枚数が増えたときのための処理 */
+.flow-cards__item:nth-child(3n + 1){
+    @include mq(md){
+        margin-left: 0;
+    }
+}
+
+/* 枚数が増えたときのための処理 */
+.flow-cards__item:nth-child(n + 4){
+    @include mq(md){
+        margin-top: 2.8125rem;
+    }
+}
+
+
+
+/*矢印*/
+.flow-cards__item {
+    position: relative; /* 擬似要素の配置に必要 */
+}
+
+.flow-cards__item:nth-child(1):after,
+.flow-cards__item:nth-child(2):after,
+.flow-cards__item:nth-child(4):after,
+.flow-cards__item:nth-child(5):after {
+    @include mq(md){
+        content: '';
+        position: absolute;
+        top: 48%;
+        right: -9.5%;
+        width: 0;
+        height: 0;
+        border-top: 12px solid transparent;
+        border-bottom: 12px solid transparent;
+        border-left: 15px solid $red;
+        transform: translateY(-50%);
+    }
+}
+
+@media (max-width: 767px) {
+    .flow-cards__item:not(:nth-child(6)):after {
+        content: '';
+        position: absolute;
+        bottom: -30px; /* カードの下に配置 */
+        left: 50%;
+        width: 0;
+        height: 0;
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        border-top: 17px solid $red; /* 矢印の色を設定 */
+        transform: translateX(-50%);
+    }
+}
+

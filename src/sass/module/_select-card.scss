@@ -70,7 +70,7 @@
 }
 
 .select-card__text span {
-    background-color: #FFD5D5;
+    background-color: $pink;
     font-size: rem(16);
     font-weight: $bold;
     @include mq(md){
