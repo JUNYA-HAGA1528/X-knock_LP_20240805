@@ -1,5 +1,14 @@
 @use "global" as *;
 
 .estate{
-    
+    color: $white;
+
+}
+
+.estate__inner{
+    max-width: $max-width;
+    margin: auto;
+    @include mq(md){
+        max-width: rem(1440);
+    }
 }
