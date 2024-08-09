@@ -4,7 +4,7 @@
     text-align: center;
     color: $red;
     font-family: $toppan;
-    font-size: rem(18);
+    font-size: rem(20);
     font-weight: $bold;
 
     @include mq(md) {
@@ -13,7 +13,3 @@
     }
 }
 
-.recommendation-title__jp .u-desktop {
-    display: inline; // span を inline に設定
-    white-space: nowrap; // span に nowrap を適用
-}

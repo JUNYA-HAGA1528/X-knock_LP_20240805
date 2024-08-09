@@ -44,6 +44,13 @@
     }
 }
 
+.point__title{
+    margin-top: rem(20);
+    @include mq(md){
+        margin-top: 0;
+    }
+}
+
 .point__img{
     width: 67.7%;
     margin: auto;

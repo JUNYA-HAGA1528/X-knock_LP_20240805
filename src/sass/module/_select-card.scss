@@ -77,3 +77,16 @@
         font-size: rem(20);
     }
 }
+
+.select-card__text-sp{
+    font-size: rem(16);
+}
+
+.select-card__text-sp span {
+    background-color: $pink;
+    font-weight: $bold;
+}
+
+.select-card__text-sp + .select-card__text-sp{
+    margin-top: rem(20);
+}

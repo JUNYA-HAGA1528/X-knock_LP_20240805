@@ -83,7 +83,7 @@
     width: rem(113);
     height: rem(164);
     position: absolute;
-    top: 49%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     @include mq(md){
@@ -304,11 +304,16 @@
 	content: "";
     position: absolute;
     top: 50%;
-    right: rem(32);
-    width: rem(20);
-	height: rem(20);
+    right: rem(15);
+    width: rem(17);
+	height: rem(17);
 	transform: translateY(-50%);
 	transition: 0.4s background-color;
+    @include mq(md){
+        right: rem(32);
+        width: rem(20);
+        height: rem(20);
+    }
 }
 
 .recommendation__button:hover span::after {
@@ -387,11 +392,17 @@
 	content: "";
     position: absolute;
     top: 50%;
-    right: rem(32);
-    width: rem(20);
-	height: rem(20);
+    right: rem(15);
+    width: rem(17);
+	height: rem(17);
 	transform: translateY(-50%);
 	transition: 0.4s background-color;
+    @include mq(md){
+        right: rem(32);
+        width: rem(20);
+        height: rem(20);
+    }
+
 }
 
 .recommendation__button--black:hover span::after {
@@ -742,7 +753,7 @@
 
 /*リンク    */
 .recommendation__link-source{
-    margin-top: rem(20);
+    margin-top: rem(30);
     display: flex;
     justify-content: center;
     gap: 0 rem(2);
