@@ -401,8 +401,80 @@
 /*口コミ*/
 .recommendation__reviews{
     margin-top: rem(80);
-    padding: rem(40) 0;
+    padding: rem(40) rem(28);
+    background-color: $white;
 }
+
+.recommendation__reviews-wrapper{
+    border: solid 1px #7D7D7D ;
+    border-radius: rem(4);
+    margin-top: rem(18);
+    padding: rem(101) rem(40) rem(20); 
+}
+
+.recommendation__reviews-flex{
+    @include mq(md){
+        display: flex;
+        align-items: center;
+        gap: 0 rem(86);
+    }
+}
+
+.recommendation__reviews-img{
+    width: 22.85%;
+    border: solid 1px  #231815;
+    border-radius: 50%;
+}
+
+.recommendation__reviews-img img {
+    aspect-ratio: 200/200;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.recommendation__reviews-text{
+    text-align: left;
+    width: 64.52%;
+    font-size: rem(18);
+    letter-spacing: 0.04em;
+    line-height: 2.2;
+}
+
+.recommendation__reviews__source{
+    margin-top: rem(23);
+    display: flex;
+    justify-content: flex-end;
+    font-size: rem(9);
+    color: #7D7D7D;
+    @include mq(md){
+        font-size: rem(12);
+    }
+}
+
+.recommendation__reviews__source-text{
+    text-decoration: underline;
+}
+
+.recommendation__reviews__source-text a:hover{
+    opacity: 0.5;
+    transition: 0.3s;
+}
+
+
+
+
+/*ボタン（口コミの下）*/
+.recommendation__reviews-buttons {
+    margin-top: rem(80);
+}
+
+
+
+
+
+
+
 
 
 
