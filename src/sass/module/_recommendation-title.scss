@@ -1,9 +1,19 @@
 @use "global" as *;
 
-.recommendation-title__jp{
+.recommendation-title__jp {
     text-align: center;
     color: $red;
     font-family: $toppan;
-    font-size: rem(24);
+    font-size: rem(18);
     font-weight: $bold;
+
+    @include mq(md) {
+        font-size: rem(24);
+        white-space: nowrap; // h3 に nowrap を適用
+    }
+}
+
+.recommendation-title__jp .u-desktop {
+    display: inline; // span を inline に設定
+    white-space: nowrap; // span に nowrap を適用
 }
