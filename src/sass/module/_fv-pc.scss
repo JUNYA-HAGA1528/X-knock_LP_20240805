@@ -83,7 +83,14 @@
     margin-top: rem(20);
 }
 
-.fv-pc__title-img{
+.fv-pc__title-img {
     position: absolute;
     bottom: -3.6%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    @include mq(md) {
+        max-width: rem(1500);
+        margin: auto;
+    }
 }

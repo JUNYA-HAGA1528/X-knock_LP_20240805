@@ -10,9 +10,33 @@
     }
 }
 
-.catalog__list{
-    margin-top: rem(40);
+.catalog__title{
+    text-align: center;
+}
+
+.catalog__title-en{
+    font-family: $baskervville;
+    font-size: rem(58);
     @include mq(md){
-        margin-top: rem(76);
+        font-size: rem(98);
+    }
+}
+
+.catalog__title-jp{
+    font-family: $toppan;
+    font-size: rem(18);
+    font-weight: $bold;
+    text-align: left;
+    line-height: 2;
+    @include mq(md){
+        text-align: center;
+        font-size: rem(24);
+    }
+}
+
+.catalog__list{
+    margin-top: rem(20);
+    @include mq(md){
+        margin-top: rem(66);
     }
 }

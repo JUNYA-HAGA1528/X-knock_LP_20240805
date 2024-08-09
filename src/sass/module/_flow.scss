@@ -1,5 +1,12 @@
 @use "global" as *;
 
+.flow{
+    @include mq(md){
+        max-width: rem(1440);
+        margin: auto;
+    }
+}
+
 .flow__heading {
     display: flex;
     align-items: center;

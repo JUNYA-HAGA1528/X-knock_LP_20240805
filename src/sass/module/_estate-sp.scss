@@ -68,3 +68,17 @@
 .estate-sp__text +.estate-sp__text {
     margin-top: rem(20);
 }
+
+.estate-sp__bottom{
+    margin-top: rem(20);
+    padding: 0 rem(25);
+}
+
+.estate-sp__bottom-text{
+    font-size: rem(16);
+    color: $black;
+}
+
+.estate-sp__bottom-text + .estate-sp__bottom-text{
+    margin-top: rem(20);
+}

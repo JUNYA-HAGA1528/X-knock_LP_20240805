@@ -72,3 +72,16 @@
     font-size: rem(18);
     line-height: 2.2;
 }
+
+.estate-pc__bottom{
+    max-width: rem(1230);
+    margin: rem(80) auto auto auto;
+    padding: 0 rem(25);
+}
+
+.estate-pc__bottom-text{
+    font-size: rem(18);
+    letter-spacing: 0.04em;
+    line-height: 2.2;
+    color: $black;
+}
