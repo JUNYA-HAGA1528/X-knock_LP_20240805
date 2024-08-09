@@ -1,14 +1,33 @@
 @use 'global' as *;
 
+
 .company-card__title{
     text-align: center;
     background-color: $red;
     color: $white;
     font-size: rem(20);
     padding: rem(10) 0;
+    font-weight: $bold;
     @include mq(md){
         font-size: rem(28);
         padding: rem(8) 0;
+    }
+}
+
+.company-card__img{
+    margin-top: rem(20);
+    @include mq(md){
+        margin-top: rem(0);
+    }
+}
+
+.company-card__img img {
+    width: rem(253);
+    height: rem(195);
+    margin: auto;
+    @include mq(md){
+        width: rem(380);
+        height: rem(293);
     }
 }
 
@@ -16,10 +35,7 @@
     margin-top: rem(10);
     display: flex;
     justify-content: center;
-    font-size: rem(9);
-    @include mq(md){
-        font-size: rem(12);
-    }
+    font-size: rem(12); 
 }
 
 .company-card__source-text{
@@ -36,9 +52,10 @@
     color: $red;
     font-size: rem(18);
     font-weight: $bold;
-    margin-top: rem(18);
+    margin-top: rem(30);
     @include mq(md){
         font-size: rem(24);
+        margin-top: rem(18);
     }
 }
 
@@ -142,11 +159,16 @@
 	content: "";
     position: absolute;
     top: 50%;
-    right: rem(32);
-    width: rem(17);
-	height: rem(17);
+    right: rem(20);
+    width: rem(13.5);
+	height: rem(13.5);
 	transform: translateY(-50%);
 	transition: 0.4s background-color;
+    @include mq(md){
+        right: rem(20);
+        width: rem(17);
+        height: rem(17);
+    }
 }
 
 .company-card__button:hover span::after {
@@ -224,13 +246,26 @@
 	content: "";
     position: absolute;
     top: 50%;
-    right: rem(32);
-    width: rem(17);
-	height: rem(17);
+    right: rem(20);
+    width: rem(13.5);
+	height: rem(13.5);
 	transform: translateY(-50%);
 	transition: 0.4s background-color;
+    @include mq(md){
+        right: rem(20);
+        width: rem(17);
+        height: rem(17);
+    }
 }
 
 .company-card__button--black:hover span::after {
     background-image: url(../images/common/company-arrow-black.png);
+    right: rem(17);
+    width: rem(24);
+	height: rem(24);
+    @include mq(md){
+        right: rem(17);
+        width: rem(20.5);
+        height: rem(20.5);
+    }
 }

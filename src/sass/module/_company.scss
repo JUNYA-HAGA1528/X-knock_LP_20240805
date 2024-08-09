@@ -2,8 +2,11 @@
 
 .company{
     background-color: #F7F7F7;
-    padding-top: rem(94);
+    padding-top: rem(20);
     text-align: center;
+    @include mq(md){
+        padding-top: rem(94);
+    }
 }
 
 .company__title{

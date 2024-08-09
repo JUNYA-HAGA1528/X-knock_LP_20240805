@@ -61,7 +61,7 @@
 }
 
 .select__titleBox{
-    margin-top: rem(20);
+    margin-top: rem(25);
     line-height: 1.75;
     @include mq(md){
         margin-top: rem(16);
@@ -83,7 +83,7 @@
     @include mq(md){
         text-align: center;
         font-size: rem(52);
-        padding: rem(9) rem(18);
+        padding: rem(0) rem(18);
     }
 }
 

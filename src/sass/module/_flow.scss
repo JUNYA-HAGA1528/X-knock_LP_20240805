@@ -1,9 +1,10 @@
 @use "global" as *;
 
 .flow{
+    margin: rem(20) auto auto auto;
     @include mq(md){
         max-width: rem(1440);
-        margin: auto;
+        margin: rem(100) auto auto auto;
     }
 }
 

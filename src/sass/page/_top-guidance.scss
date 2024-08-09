@@ -2,6 +2,6 @@
 .top-guidance{
     margin-top: rem(57);
     @include mq(md){
-        margin-top: rem(70);
+        margin-top: rem(-80);
     }
 }

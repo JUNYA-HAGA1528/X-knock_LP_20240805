@@ -293,7 +293,10 @@
                         期間内に売り切りたい
                     </h3>
                     <div class="company-card__img">
-                        <img src="./assets/images/common/company-card1.png" alt="アドバンスライフ有限会社">
+                        <picture>
+                            <source srcset="./assets/images/common/company-card1.png" media="(min-width: 768px)">
+                            <img src="./assets/images/common/company-card1-sp.png" alt="アドバンスライフ有限会社">
+                        </picture>
                     </div>
                     <div class="company-card__sentence">
                         <div class="company-card__source">
@@ -332,7 +335,10 @@
                         依頼したい
                     </h3>
                     <div class="company-card__img">
-                        <img src="./assets/images/common/company-card2.png" alt="東急リバブル株式会社">
+                        <picture>
+                            <source srcset="./assets/images/common/company-card2.png" media="(min-width: 768px)">
+                            <img src="./assets/images/common/company-card2.png" alt="東急リバブル株式会社">
+                        </picture>
                     </div>
                     <div class="company-card__sentence">
                         <div class="company-card__source">
@@ -456,6 +462,7 @@
         guidance
     ------------------>
     <section class="top-guidance guidance">
+        <div class="guidance__heading">Guidance</div>
         <div class="guidance__inner">
             <div class="guidance__title section-title">
                 <p class="section-title__en">Real&nbsp;Estate&nbsp;Guidance</p>
@@ -555,7 +562,7 @@
     <!-- --------------
         flow
     ------------------>
-    <section id="flow" class="top-flow flow">
+    <section id="flow" class="flow">
         <div class="flow__heading">
             <hr class="flow__line">
             <span class="flow__heading-text">FLOW</span>
@@ -933,9 +940,7 @@
                             <div class="estate-pc__sentence">
                                 <h3 class="estate-pc__title">大手不動産</h3>
                                 <p class="estate-pc__text">
-                                    地元不動産は、地域密着型の丁寧な対応が最大の強みです。<br>
-                                    地域の相場や特性に精通しており、地元顧客とのネットワークを活かした効果的な売却活動が期待できます。<br>
-                                    例えば、世田谷区の特定の物件に詳しい地元不動産なら、その特性を活かした販売戦略を立てられます。一方で、広域での情報発信力が弱く、大規模な広告展開が難しい点がデメリットです。また、取り扱い物件数が限られるため、比較対象が少ない場合もあります。
+                                    大手不動産の最大の強みは、幅広いネットワークと豊富な顧客層を持つ点です。充実した広告宣伝力により、物件の露出度を高められます。また、企業としての信頼性と安心感、多様な物件情報と比較データを提供できる点もメリットです。一方で、個別対応が少ない可能性があり、地域特有の細かい情報に弱い場合があります。また、手数料が地元不動産より高めの傾向にあるのがデメリットとして挙げられます。                                
                                 </p>
                             </div>
                             <div class="estate-pc__img">
@@ -1284,7 +1289,7 @@
                             <div class="recommendation__name">
                                 <h3 class="recommendation__name-en">Tokyu&nbsp;Livable</h3>
                                 <p class="recommendation__name-jp">東急リバブル株式会社&nbsp;三軒茶屋センター</p>
-                                <div class="recommendation__name-number">
+                                <div class="recommendation__name-number recommendation__name-number--top">
                                     <img src="./assets/images/common/recommendation02.png" alt="02">
                                 </div>
                                 <p class="recommendation__name-text">
@@ -1295,7 +1300,7 @@
                             <div class="recommendation__flex">
                                 <div class="recommendation__logo">
                                     <div class="recommendation__logo-img">
-                                        <img src="./assets/images/common/recommendation__logo1.jpg" alt="アドバンスライフ有限会社">
+                                        <img src="./assets/images/common/recommendation__logo2.jpg" alt="東急リバブル">
                                     </div>
                                     <div class="recommendation__logo-source">
                                         <p class="recommendation__logo-source-title">出典元：</p>
@@ -1347,7 +1352,7 @@
                             </div>
     
                             <!--特徴-->
-                            <div class="recommendation__features">
+                            <div class="recommendation__features recommendation__features--margin">
                                 <div class="recommendation__features-title recommendation-title">
                                     <h3 class="recommendation-title__jp">
                                         <span class="u-desktop">東急リバブル株式会社&nbsp;三軒茶屋センター</span>特徴
@@ -1463,7 +1468,7 @@
                             </div>    
                             
                             <!--会社概要-->
-                            <div class="recommendation__overview">
+                            <div class="recommendation__overview recommendation__overview--margin">
                                 <div class="recommendation__overview-title recommendation-title">
                                     <h3 class="recommendation-title__jp">会社概要</h3>
                                 </div>

@@ -47,8 +47,10 @@
     font-family: $baskervville;
     font-size: rem(52);
     color: $red;
+    font-weight: $regular;
     @include mq(md){
         font-size: rem(98);
+        line-height: 1.25;
     }
 }
 
@@ -58,6 +60,7 @@
     font-weight: $bold;
     @include mq(md){
         font-size: rem(36);
+        line-height: 1.25;
     }
 }
 
@@ -69,12 +72,28 @@
     left: 50%;
     transform: translate(-50%, -50%);
     @include mq(md){
-        top: 30%;
+        top: 24%;
         left: 50%;    
         width: rem(311);
         height: rem(284);
     }
 }
+
+.recommendation__name-number--top{
+    width: rem(113);
+    height: rem(164);
+    position: absolute;
+    top: 49%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @include mq(md){
+        top: 35%;
+        left: 50%;    
+        width: rem(311);
+        height: rem(284);
+    }
+}
+
 
 .recommendation__name-text{
     margin-top: rem(20);
@@ -231,7 +250,7 @@
     overflow: hidden;
     @include mq(md){
         font-size: rem(18);
-        padding: rem(10.5) 0;
+        padding: rem(15.5) 0;
         width: rem(780);
     }
 }
@@ -286,8 +305,8 @@
     position: absolute;
     top: 50%;
     right: rem(32);
-    width: rem(13.4);
-	height: rem(13.4);
+    width: rem(20);
+	height: rem(20);
 	transform: translateY(-50%);
 	transition: 0.4s background-color;
 }
@@ -314,7 +333,7 @@
     overflow: hidden;
     @include mq(md){
         font-size: rem(18);
-        padding: rem(10.5) 0;
+        padding: rem(15.5) 0;
         width: rem(780);
     }
 }
@@ -369,14 +388,17 @@
     position: absolute;
     top: 50%;
     right: rem(32);
-    width: rem(13.4);
-	height: rem(13.4);
+    width: rem(20);
+	height: rem(20);
 	transform: translateY(-50%);
 	transition: 0.4s background-color;
 }
 
 .recommendation__button--black:hover span::after {
     background-image: url(../images/common/company-arrow-black.png);
+    right: rem(28);
+    width: rem(28);
+	height: rem(28);
 }
 
 
@@ -390,8 +412,15 @@
     font-weight: $bold;
     background-color: $white;
     @include mq(md){
+        padding: rem(40) 0 0 0;
         margin-top: rem(97);
-        padding: rem(23) 0 rem(17) rem(53);
+    }
+}
+
+.recommendation__features--margin{
+    margin-top: rem(40);
+    @include mq(md){
+        margin-top: rem(160);
     }
 }
 
@@ -431,8 +460,11 @@
 
 .recommendation__features-item dt {
     width: 100%;
+    font-weight: $bold;
     @include mq(md){
+        font-size: rem(20);
         width: 31%;
+        padding-left: rem(53);
     }
 }
 
@@ -448,10 +480,12 @@
 
 .recommendation__features-text{
     line-height: 2;
+    font-weight: $bold;
     margin-top: rem(6);
     @include mq(md){
         line-height: 2.2;
         margin-top: 0;
+        font-size: rem(18);
     }
 }
 
@@ -537,7 +571,7 @@
 .recommendation__reviews-flex{
     @include mq(md){
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         gap: 0 rem(86);
     }
 }
@@ -589,7 +623,6 @@
     color: #7D7D7D;
     @include mq(md){
         margin-top: rem(23);
-        font-size: rem(12);
         justify-content: flex-end;
     }
 }
@@ -623,13 +656,18 @@
     max-width: rem(834);
     width: calc(100% + rem(50));
     margin: rem(28) auto auto rem(-25);
-
-    // メディアクエリ外のスタイル（右側だけpaddingをなくす）
     padding: 0  0 0 rem(25);
 
     @include mq(md) {
         margin: rem(80) auto auto auto;
         padding: 0 rem(25); // メディアクエリ内のpaddingを維持
+    }
+}
+
+.recommendation__overview--margin{
+    margin: rem(28) auto auto rem(-25);
+    @include mq(md){
+        margin: rem(160) auto auto auto;
     }
 }
 
@@ -730,6 +768,7 @@
 
 .recommendation__link-source-text{
     text-decoration: underline;
+    
 }
 
 .recommendation__link-source-text a:hover{

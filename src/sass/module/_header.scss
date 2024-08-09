@@ -7,7 +7,7 @@
 }
 
 .header__inner {    
-    max-width: rem(1410);
+    max-width: rem(1360);
     margin: auto;
     padding: 0 rem(25);
     height: rem(40);
@@ -23,4 +23,5 @@
     color: $white;
     font-size: rem(16);
     font-family: "yu-gothic-pr6n", sans-serif;
+    font-weight: $bold;
 }

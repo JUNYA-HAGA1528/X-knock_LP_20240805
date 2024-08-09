@@ -33,8 +33,10 @@
     padding: rem(5);
     vertical-align: middle;
     border: 1px solid #828282;
+    width: 280px; /* 幅を設定 */
     @include mq(md){
         padding: rem(10);
+        width: 280px; /* 幅を同様に設定 */
     }
 }
 

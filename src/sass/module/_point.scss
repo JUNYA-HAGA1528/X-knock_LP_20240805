@@ -92,9 +92,6 @@
 }
 
 .point__text span {
-    font-size: rem(16);
     background-color: $pink;
-    @include mq(md){
-        font-size: rem(20);
-    }
+    font-weight: $bold;
 }

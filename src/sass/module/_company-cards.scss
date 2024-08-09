@@ -12,6 +12,8 @@
     display: flex; /* 追加 */
     flex-direction: column; /* 追加 */
     justify-content: space-between; /* 追加 */
+    border-radius: rem(4); /* 角を丸くする */
+    overflow: hidden; /* 内部の要素が角からはみ出さないようにする */
     @include mq(md) {
         max-width: calc(50% - 3.75rem * 1 / 2);
         width: 100%;

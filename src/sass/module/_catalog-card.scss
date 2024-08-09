@@ -14,6 +14,7 @@
     text-align: center;
     padding: rem(9.5) 0;
     font-size: rem(16);
+    font-weight: $bold;
     line-height: 1.35;
     background-color: $black;
     color: $white;
@@ -62,3 +63,6 @@
 }
 
 
+.catalog-card__url a:hover {
+    text-decoration: underline;
+}

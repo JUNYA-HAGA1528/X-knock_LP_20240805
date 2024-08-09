@@ -12,7 +12,7 @@
 
 .contents__bg {
     background-image: url(../images/common/contents-bg-sp.png);
-    background-position: center calc(50% - 230px); /* 画像を上に10px移動 */
+    background-position: center calc(50% - 242px); /* 画像を上に10px移動 */
     background-repeat: no-repeat;
     background-size: rem(320) rem(60);
     @include mq(md){
@@ -67,7 +67,10 @@
 }
 
 .contents__item + .contents__item {
-    margin-top: rem(22);
+    margin-top: rem(10);
+    @include mq(md){
+        margin-top: rem(22);
+    }
 }
 
 
@@ -83,13 +86,14 @@
     font-size: rem(14);
     font-weight: bold;
     width: rem(340);
-    padding: rem(25.5) 0;
+    padding: rem(18) 0;
     z-index: 1;
     overflow: hidden;
     border: solid 1px transparent; /* 初期状態で透明なボーダーを設定 */
     transition: background-color .7s, border-color .7s; /* ボーダーの色だけを変えるように */
     @include mq(md) {
         width: rem(480);
+        padding: rem(25.5) 0;
         font-size: rem(18);
     }
 }

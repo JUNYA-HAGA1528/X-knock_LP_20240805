@@ -41,20 +41,20 @@
 .fv-pc__title{
     font-size: rem(61);
     font-weight: $bold;
-    line-height: 1.5;
+    line-height: 1.45;
     white-space: nowrap;
 }
 
 .fv-pc__span-head{
     background-color: #231815;
     color: $white;
-    padding: rem(6) rem(19);
+    padding: rem(10) rem(19);
 }
 
 .fv-pc__span-bottom{
     background-color: $red;
     color: $white;
-    padding: rem(6) rem(9.5);
+    padding: rem(10) rem(9.5);
 }
 
 .fv-pc__subtitle{
@@ -77,6 +77,9 @@
 .fv-pc__text span{
     font-weight: $bold;
     background-color:$pink ;
+    @include mq(md){
+        font-size: rem(18);
+    }
 }
 
 .fv-pc__text + .fv-pc__text{

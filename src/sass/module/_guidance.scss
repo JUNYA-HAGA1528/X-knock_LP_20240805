@@ -1,5 +1,18 @@
 @use "global" as *;
 
+
+.guidance__heading{
+    font-size: rem(58);
+    font-family: $baskervville;
+    max-width: rem(550);
+    margin: auto;
+    @include mq(md){
+        max-width: rem(1480);
+        font-size: rem(98);
+    }
+}
+
+
 .guidance__inner{
     max-width: $max-width;
     margin: auto;

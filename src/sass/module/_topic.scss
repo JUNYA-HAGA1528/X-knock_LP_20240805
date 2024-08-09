@@ -48,7 +48,7 @@
 .topic__title{
     font-family: $baskervville;
     font-size: rem(58);
-    font-weight: $bold;
+    font-weight: $regular;
     text-transform: capitalize;
     position: absolute;
     top: 0%;
@@ -86,7 +86,6 @@
 
 .topic__text{
     font-size: rem(16);
-    letter-spacing: 0.04em;
     text-align: left;
     @include mq(md){
         font-size: rem(18);
