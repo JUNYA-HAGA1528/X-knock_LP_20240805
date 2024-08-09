@@ -70,6 +70,11 @@
     margin-top: rem(22);
 }
 
+
+
+
+
+
 .contents__button {
     text-align: center;
     background: $white;
@@ -81,7 +86,8 @@
     padding: rem(25.5) 0;
     z-index: 1;
     overflow: hidden;
-    transition: .7s;
+    border: solid 1px transparent; /* 初期状態で透明なボーダーを設定 */
+    transition: background-color .7s, border-color .7s; /* ボーダーの色だけを変えるように */
     @include mq(md) {
         width: rem(480);
         font-size: rem(18);
@@ -104,6 +110,7 @@
     transition: transform ease .3s;
 }
 
+
 .contents__button::after {
     border-radius: rem(0);
     transition: all 0.4s ease-in-out;
@@ -113,13 +120,15 @@
     color: $white;
 }
 
+
 .contents__button:hover {
-    border: solid 1px $red;
+    color: $white;
+    border-color: $red; /* ボーダーの色だけを変える */
 }
 
 .contents__button:hover::before {
     transform-origin: 0% 50%;
-    transform: scale(1, 1);
+    transform: scaleX(1); /* 横からのアニメーションを保持 */
 }
 
 .contents__button a {

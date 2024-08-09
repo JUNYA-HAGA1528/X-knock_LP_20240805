@@ -1,6 +1,37 @@
 @use "global" as *;
 
+.selling__head {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    max-width: rem(1440);
+    margin: auto;
+}
 
+.selling__line {
+    flex-grow: 1;
+    border: none;
+    border-top: 1px solid $white;
+    margin-right: rem(18);
+    @include mq(md){
+        margin-right:rem(40);
+    }
+}
+
+.selling__heading{
+    margin-top: rem(10);
+    @include mq(md){
+        margin-top: rem(-24);
+    }
+}
+
+.selling__head-text{
+    font-size: rem(52);
+    font-family: $baskervville;
+    @include mq(md){
+        font-size: rem(98);
+    }
+}
 
 .selling__list {
     margin-top: rem(46);

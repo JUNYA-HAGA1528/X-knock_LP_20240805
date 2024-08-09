@@ -1,7 +1,7 @@
 @use "global" as *;
 
 .top-selling{
-    margin-top: rem(125);
+    margin-top: rem(40);
     @include mq(md){
         margin-top: rem(206);
     }
