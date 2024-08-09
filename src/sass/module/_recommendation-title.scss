@@ -1,0 +1,9 @@
+@use "global" as *;
+
+.recommendation-title__jp{
+    text-align: center;
+    color: $red;
+    font-family: $toppan;
+    font-size: rem(24);
+    font-weight: $bold;
+}

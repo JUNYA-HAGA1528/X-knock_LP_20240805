@@ -1,0 +1,418 @@
+@use "global" as *;
+
+.recommendation{
+    text-align: center;
+    max-width: rem(1440);
+    margin: auto;
+    background-color: #f7f7f7;
+}
+
+.recommendation__container{
+    display: flex;
+}
+
+.recommendation__content{
+    width: 100%;
+    @include mq(md){
+        width: 83.333%;
+    }
+}
+
+.recommendation__inner{
+    max-width: $max-width;
+    margin: auto;
+    padding:  0 rem(25);
+    @include mq(md){
+        max-width: rem(1073);
+    }
+}
+
+
+
+.recommendation__name {
+    margin-top: rem(102);
+    position: relative;
+}
+
+.recommendation__name-en {
+    font-family: $baskervville;
+    font-size: rem(98);
+    font-weight: $bold;
+    color: $red;
+}
+
+.recommendation__name-jp {
+    font-family: $toppan;
+    font-size: rem(36);
+    font-weight: $bold;
+}
+
+.recommendation__name-number {
+    width: rem(311);
+    height: rem(284);
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.recommendation__name-text{
+    margin-top: rem(40);
+    font-family: $toppan;
+    font-size: rem(36);
+    font-weight: $bold;
+    letter-spacing: 0.05em;
+    color: $red;
+}
+
+
+.recommendation__flex{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0 rem(81);
+    margin-top: rem(51);
+}
+
+.recommendation__logo-img{
+    word-wrap: 16.6666%;
+    height: rem(200);
+}
+
+.recommendation__logo-img img {
+    aspect-ratio: 200/200;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.recommendation__logo-source{
+    display: flex;
+    justify-content: center;
+    font-size: rem(9);
+    margin-top: rem(10);
+    @include mq(md){
+        font-size: rem(12);
+    }
+}
+
+.recommendation__logo-source-text{
+    text-decoration: underline;
+}
+
+.recommendation__logo-source-text a:hover{
+    opacity: 0.5;
+    transition: 0.3s;
+}
+
+.recommendation__explanation{
+    text-align: left;
+    width: 57.57%;
+}
+
+.recommendation__explanation-text{
+    font-family: $toppan;
+    font-size: rem(36);
+    font-weight: $bold;
+    background-color: $red;
+    color: $white;
+    padding: rem(1.5) rem(12) rem(1.5) ;
+    display: inline-block;
+}
+
+.recommendation__explanation-text + .recommendation__explanation-text{
+    margin-top: rem(10);
+}
+
+.recommendation__text{
+    text-align: left;
+    margin-top: rem(40);
+    padding: 0 rem(30);
+    font-size: rem(18);
+    letter-spacing: 0.04em;
+    line-height: 2.2;
+}
+
+.recommendation__text span {
+    font-weight: $bold;
+}
+
+/*ボタン（赤）*/
+.recommendation__buttons {
+    margin-top: rem(54);
+}
+
+.recommendation__button + .recommendation__button{
+    margin-top: rem(20);
+}
+
+.recommendation__button {
+    background: $red;
+    border: solid 1px $red ;
+    position: relative;
+    color: $white;
+    font-size: rem(16);
+    font-weight: $bold;
+    width: rem(340);
+    padding: rem(12) 0;
+    border-radius: rem(4);
+    z-index: 1;
+    transition: 0.4s;
+    overflow: hidden;
+    @include mq(md){
+        font-size: rem(18);
+        padding: rem(10.5) 0;
+        width: rem(780);
+    }
+}
+
+.recommendation__button::before {
+    border-radius: rem(4);
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-color: #fff;
+    transform-origin: 100% 50%;
+    transform: scaleX(0);
+    transition: transform ease 0.4s;
+}
+
+.recommendation__button::after{
+    border-radius: rem(0);
+    transition: all 0.4s ease-in-out;
+}
+
+.recommendation__button:hover span {
+    color: $red;
+}   
+
+.recommendation__button:hover {
+    border: solid 1px $red ;
+}
+
+.recommendation__button:hover::before {
+    transform-origin: 0% 50%;
+    transform: scale(1, 1);
+}
+
+.recommendation__button a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.recommendation__button span::after {
+	background-image: url(../images/common/company-arrow-white.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	content: "";
+    position: absolute;
+    top: 50%;
+    right: rem(32);
+    width: rem(13.4);
+	height: rem(13.4);
+	transform: translateY(-50%);
+	transition: 0.4s background-color;
+}
+
+.recommendation__button:hover span::after {
+    background-image: url(../images/common/company-arrow-red.png);
+}
+
+
+
+/*ボタン（黒）*/
+.recommendation__button--black {
+    background: $black;
+    border: solid 1px $black ;
+    position: relative;
+    color: $white;
+    font-size: rem(16);
+    font-weight: $bold;
+    width: rem(340);
+    padding: rem(12) 0;
+    border-radius: rem(4);
+    z-index: 1;
+    transition: 0.4s;
+    overflow: hidden;
+    @include mq(md){
+        font-size: rem(18);
+        padding: rem(10.5) 0;
+        width: rem(780);
+    }
+}
+
+.recommendation__button--black::before {
+    border-radius: rem(4);
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-color: #fff;
+    transform-origin: 100% 50%;
+    transform: scaleX(0);
+    transition: transform ease 0.4s;
+}
+
+.recommendation__button--black::after{
+    border-radius: rem(0);
+    transition: all 0.4s ease-in-out;
+}
+
+.recommendation__button--black:hover span {
+    color: $black;
+}   
+
+.recommendation__button--black:hover {
+    border: solid 1px $black ;
+}
+
+.recommendation__button--black:hover::before {
+    transform-origin: 0% 50%;
+    transform: scale(1, 1);
+}
+
+.recommendation__button--black a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.recommendation__button--black span::after {
+	background-image: url(../images/common/company-arrow-white.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	content: "";
+    position: absolute;
+    top: 50%;
+    right: rem(32);
+    width: rem(13.4);
+	height: rem(13.4);
+	transform: translateY(-50%);
+	transition: 0.4s background-color;
+}
+
+.recommendation__button--black:hover span::after {
+    background-image: url(../images/common/company-arrow-black.png);
+}
+
+
+
+
+/*特徴*/
+.recommendation__features{
+    text-align: left;
+    margin-top: rem(97);
+    padding: rem(23) 0 rem(17) rem(53);
+    font-weight: $bold;
+    background-color: $white;
+}
+
+.recommendation__features-item{
+    text-align: left;
+    @include mq(md){
+        display: flex;
+        align-items: center;
+    }
+}
+.recommendation__features-item {
+    border-bottom: 1px solid #DADADA;
+    padding: rem(40) 0;
+}
+
+.recommendation__features-item:last-child {
+    border-bottom: none;
+}
+
+
+.recommendation__features-item dt {
+    width: 100%;
+    @include mq(md){
+        width: 31%;
+    }
+}
+
+.recommendation__features-img{
+    width: rem(600);
+    height: rem(120);
+}
+
+.recommendation__features-text{
+    line-height: 2.2;
+}
+
+
+
+
+/*売却実績*/
+.recommendation__table{
+    margin-top: rem(63);
+}
+
+.recommendation__table-box {
+    max-width: rem(890);
+    margin: rem(20) auto auto auto;
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    padding: 0 rem(25);
+    font-size: rem(14);
+    letter-spacing: 0.18em;
+    font-weight: $bold;
+}
+
+.recommendation__table-box thead th {
+    background-color: $red;
+    color: $white;
+    padding: rem(8);
+    border: 1px solid #828282;
+}
+
+.recommendation__table-box tbody td {
+    padding: rem(8);
+    border: 1px solid #828282;
+}
+
+.recommendation__table-box tbody tr:nth-child(even) {
+    background-color: $white;
+}
+
+.recommendation__table-box tbody tr:nth-child(odd) {
+    background-color: $white;
+}
+
+
+
+
+
+/*口コミ*/
+.recommendation__reviews{
+    margin-top: rem(80);
+    padding: rem(40) 0;
+}
+
+
+
+
+
+
+
+
+
+/*サイドバー*/
+.recommendation__sidebar{
+    width: 16.6666%;
+}

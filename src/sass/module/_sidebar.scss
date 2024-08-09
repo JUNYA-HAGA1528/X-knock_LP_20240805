@@ -1,0 +1,26 @@
+@use "global" as *;
+
+.sidebar{
+    background-color: #F2F2F2;
+}
+
+.sidebar__buttons {
+    text-align: center;
+    margin-top: rem(22);
+}
+
+.sidebar__button {
+    font-family: $toppan;
+    background: $white;
+    border: solid 1px $red ;
+    color: $red;
+    font-size: rem(14);
+    font-weight: $bold;
+    width: rem(200);    
+    padding: rem(18.5) 0;
+    z-index: 1;
+}
+
+.sidebar__button + .sidebar__button{
+    margin-top: rem(20);
+}
