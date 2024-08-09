@@ -27,33 +27,50 @@
     }
 }
 
-
+.recommendation__item{
+    padding-bottom:rem(100) ;
+    border-bottom: solid 1px #494949 ;
+}
 
 .recommendation__name {
-    margin-top: rem(102);
+    margin-top: rem(41.34);
     position: relative;
+    @include mq(md){
+        margin-top: rem(102);
+    }
 }
 
 .recommendation__name-en {
     font-family: $baskervville;
-    font-size: rem(98);
-    font-weight: $bold;
+    font-size: rem(52);
     color: $red;
+    @include mq(md){
+        font-size: rem(98);
+    }
 }
 
 .recommendation__name-jp {
     font-family: $toppan;
-    font-size: rem(36);
+    font-size: rem(18);
     font-weight: $bold;
+    @include mq(md){
+        font-size: rem(36);
+    }
 }
 
 .recommendation__name-number {
-    width: rem(311);
-    height: rem(284);
+    width: rem(113);
+    height: rem(164);
     position: absolute;
-    top: 30%;
+    top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
+    @include mq(md){
+        top: 30%;
+        left: 50%;    
+        width: rem(311);
+        height: rem(284);
+    }
 }
 
 .recommendation__name-text{
@@ -346,8 +363,11 @@
 }
 
 .recommendation__features-img{
-    width: rem(600);
-    height: rem(120);
+    width: rem(260);
+    @include mq(md){
+        width: rem(600);
+        height: rem(120);
+    }
 }
 
 .recommendation__features-text{
@@ -441,7 +461,7 @@
     line-height: 2.2;
 }
 
-.recommendation__reviews__source{
+.recommendation__reviews-source{
     margin-top: rem(23);
     display: flex;
     justify-content: flex-end;
@@ -452,11 +472,11 @@
     }
 }
 
-.recommendation__reviews__source-text{
+.recommendation__reviews-source-text{
     text-decoration: underline;
 }
 
-.recommendation__reviews__source-text a:hover{
+.recommendation__reviews-source-text a:hover{
     opacity: 0.5;
     transition: 0.3s;
 }
@@ -473,10 +493,91 @@
 
 
 
+/*会社概要*/
+.recommendation__overview{
+    max-width: rem(834);
+    margin: rem(80) auto auto auto;
+    padding: 0 rem(25);
+}
+
+.info-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: rem(40);
+    font-family: "Inter", sans-serif;
+    font-size: rem(14);
+    font-weight: $regular;
+}
+
+.info-table th, 
+.info-table td {
+    border: 1px solid #828282; /* セルの境界線 */
+    font-weight: $regular;
+}
+
+.info-table th {
+    background-color: #333; /* 左側の背景色 */
+    color: #fff; /* 文字色を白に */
+    width: 26.5%; /* 左側の幅を指定 */
+    text-align: center; /* 左揃え */
+    vertical-align: center; /* 上部揃え */
+    letter-spacing: 0.18em;
+    padding: rem(10) 0;
+}
+
+.info-table td {
+    background-color: #fff; /* 右側の背景色 */
+    color: $black; /* 文字色を黒に */
+    text-align: left; /* 左揃え */
+    vertical-align: top; /* 上部揃え */
+    padding: rem(10) 0 rem(10) rem(53);
+}
+
+.info-table a {
+    color:$black; /* リンクの文字色 */
+    text-decoration: none; /* リンクの下線を消す */
+}
+
+.info-table a:hover {
+    text-decoration: underline; /* リンクにホバーしたときの下線 */
+}
 
 
 
+/*ボタン（会社概要の下）*/
+.recommendation__overview-buttons{
+    margin-top: rem(69);
+}
 
+
+
+/*リンク    */
+.recommendation__link-source{
+    margin-top: rem(40);
+    display: flex;
+    justify-content: center;
+    gap: 0 rem(10);
+    font-size: rem(9);
+    color: #0C7DBD;
+    @include mq(md){
+        font-size: rem(18);
+        letter-spacing: 0.04em;
+    }
+}
+
+.recommendation__link-img{
+    width: rem(26);
+    height: rem(26);
+}
+
+.recommendation__link-source-text{
+    text-decoration: underline;
+}
+
+.recommendation__link-source-text a:hover{
+    opacity: 0.5;
+    transition: 0.3s;
+}
 
 
 
