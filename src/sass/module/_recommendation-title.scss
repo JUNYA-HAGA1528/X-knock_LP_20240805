@@ -1,15 +1,23 @@
 @use "global" as *;
 
 .recommendation-title__jp {
-    text-align: center;
+    display: flex;
+    justify-content: center; /* 中央揃え */
+    align-items: center; /* 縦方向にも中央揃え */
     color: $red;
     font-family: $toppan;
     font-size: rem(20);
     font-weight: $bold;
-
+    white-space: nowrap;
     @include mq(md) {
         font-size: rem(24);
-        white-space: nowrap; // h3 に nowrap を適用
     }
 }
 
+.recommendation-title__jp p {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    white-space: nowrap;
+    margin: 0;
+}

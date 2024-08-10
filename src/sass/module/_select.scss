@@ -78,7 +78,7 @@
     display: inline;
 	box-decoration-break: clone;
 	-webkit-box-decoration-break: clone;
-    padding: 0 rem(5);
+    padding: rem(3) rem(5);
     letter-spacing: 0.1em;
     @include mq(md){
         text-align: center;
