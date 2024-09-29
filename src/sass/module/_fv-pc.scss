@@ -1,8 +1,5 @@
 @use "global" as *;
 
-.fv-pc{
-    font-family: $yu-gothic;
-}
 
 .fv-pc__inner{
     position: relative;
@@ -24,6 +21,7 @@
     max-width: rem(616);
     margin: auto;
     padding: 0 0.7% 0 4.35%;
+    font-weight: $semiBold;
 }
 
 .fv-pc__content,
@@ -40,7 +38,6 @@
 
 .fv-pc__title{
     font-size: rem(61);
-    font-weight: $bold;
     line-height: 1.45;
     white-space: nowrap;
 }
@@ -48,24 +45,23 @@
 .fv-pc__span-head{
     background-color: #231815;
     color: $white;
-    padding: rem(10) rem(19);
+    padding: rem(0) rem(19);
 }
 
 .fv-pc__span-bottom{
     background-color: $red;
     color: $white;
-    padding: rem(10) rem(9.5);
+    padding: rem(0) rem(9.5);
 }
 
 .fv-pc__subtitle{
     font-size: rem(30);
-    font-weight: $bold;
-    margin-top: rem(69);
+    margin-top: rem(59);
     padding-left: rem(9);
 }
 
 .fv-pc__textBox{
-    margin-top: rem(20);
+    margin-top: rem(74);
     padding: 0 rem(33) 0 rem(9);
     text-align: justify;
 }
@@ -75,7 +71,6 @@
 }
 
 .fv-pc__text span{
-    font-weight: $bold;
     background-color:$pink ;
     @include mq(md){
         font-size: rem(18);
@@ -83,7 +78,7 @@
 }
 
 .fv-pc__text + .fv-pc__text{
-    margin-top: rem(20);
+    margin-top: rem(25);
 }
 
 .fv-pc__title-img {
@@ -95,5 +90,6 @@
     @include mq(md) {
         max-width: rem(1500);
         margin: auto;
+        bottom: -4.6%;
     }
 }

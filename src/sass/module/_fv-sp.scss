@@ -14,9 +14,12 @@
     padding: 0 rem(25);
 }
 
+.fv-sp__sentence{
+    font-weight: $semiBold;
+}
+
 .fv-sp__title {
     font-size: rem(32);
-    font-weight: $bold;
     line-height: 1.85;
 }
 
@@ -34,7 +37,6 @@
 
 .fv-sp__subtitle {
     font-size: rem(20);
-    font-weight: $bold;
     margin-top: rem(20);
 }
 
@@ -48,7 +50,6 @@
 }
 
 .fv-sp__text span{
-    font-weight: $bold;
     background-color:$pink ;
 }
 

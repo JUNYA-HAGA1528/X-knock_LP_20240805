@@ -31,6 +31,17 @@
     <script>
         (function(d) {
           var config = {
+            kitId: 'hec5odz',
+            scriptTimeout: 3000,
+            async: true
+          },
+          h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+        })(document);
+    </script>
+
+    <script>
+        (function(d) {
+          var config = {
             kitId: 'kht5ipu',
             scriptTimeout: 3000,
             async: true
@@ -77,9 +88,31 @@
         ヘッダー
     ------------------>
     <header class="header">
-        <h1 class="header__inner">
-            <p>世田谷区不動産売却メディア</p>
-        </h1>
+        <div class="header__inner">
+            <h1 class="header__logo">
+                【PR】世田谷区不動産売却メディア
+            </h1>
+            <nav class="header__nav u-desktop">
+                <ul class="header__list">
+                    <li class="header__item">
+                        <a href="https://setagaya-realestate.com/category/real-estate-sales-guide/" target="_blank">
+                            不動産売却の手引
+                        </a>
+                    </li>
+                    <li class="header__item">
+                        <a href="https://setagaya-realestate.com/category/area/" target="_blank">
+                            エリア
+                        </a>
+                    </li>
+
+                    <li class="header__item">
+                        <a href="https://setagaya-realestate.com/category/list-of-real-estate-companies/" target="_blank">
+                            不動産売却会社一覧
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
 
@@ -99,19 +132,16 @@
                         <h3 class="fv-pc__subtitle">売却力のある不動産会社2選を紹介</h3>
                         <div class="fv-pc__textBox">
                             <p class="fv-pc__text">
-                                東京の一等地、世田谷区。そんな憧れのエリアである世田谷区で、<span>不動産を売却できる会社を2社紹介</span>いたします。
+                                東京の一等地である世田谷区。そんな憧れのエリア・世田谷区で、不動産を売却できる会社を2社紹介します。
                             </p>
                             <p class="fv-pc__text">
-                                豊富な経験と独自のノウハウを持つこれらの会社は、適正な査定から効果的な戦略や提案まで、売主様のニーズに寄り添ったサービスを提供しています。<span>厳選された2社の特徴と強みを詳しく解説し、あなたの大切な資産を最適な形で売却するためのヒント</span>をお伝えします。
-                            </p>
-                            <p class="fv-pc__text">
-                                世田谷区の不動産市場で成功を掴むための重要になる、注目の不動産会社2選をぜひチェックしてください。
+                                厳選された2社の特徴と強みを詳しく解説し、あなたの大切な資産を最適な形で売却するためのヒントをお伝えします。
                             </p>
                         </div>
                     </div>
                 </div>
                 <div class="fv-pc__img">
-                    <img src="./assets/images/common/fv-pc.png" alt="メインビューの家の画像">
+                    <img src="./assets/images/common/fv-pc.jpg" alt="メインビューの家の画像">
                 </div>    
             </div>
             <div class="fv-pc__title-img">
@@ -132,13 +162,10 @@
                     <h3 class="fv-sp__subtitle">売却力のある不動産会社2選を紹介</h3>
                     <div class="fv-sp__textBox">
                         <p class="fv-sp__text">
-                            東京の一等地、世田谷区。そんな憧れのエリアである世田谷区で、<span>不動産を売却できる会社を2社紹介</span>いたします。
+                            東京の一等地である世田谷区。そんな憧れのエリア・世田谷区で、不動産を売却できる会社を2社紹介します。
                         </p>
                         <p class="fv-sp__text">
-                            豊富な経験と独自のノウハウを持つこれらの会社は、適正な査定から効果的な戦略や提案まで、売主様のニーズに寄り添ったサービスを提供しています。<span>厳選された2社の特徴と強みを詳しく解説し、あなたの大切な資産を最適な形で売却するためのヒント</span>をお伝えします。
-                        </p>
-                        <p class="fv-sp__text">
-                            世田谷区の不動産市場で成功を掴むための重要になる、注目の不動産会社2選をぜひチェックしてください。
+                            厳選された2社の特徴と強みを詳しく解説し、あなたの大切な資産を最適な形で売却するためのヒントをお伝えします。
                         </p>
                     </div>
                 </div>
@@ -231,27 +258,16 @@
         demand
     ------------------>
     <section id="demand" class="demand">
-        <h2 class="demand__title">世田谷区の不動産は今が売りどき!</h2>
         <div class="demand__inner">
             <div class="demand__container">
+                <h2 class="demand__title">世田谷区の不動産は今が売りどき!</h2>
                 <h3 class="demand__subtitle">
                     <span class="dots">公示価格</span>に見る<br class="u-mobile">世田谷区の不動産需要
                 </h3>
-                <p class="demand__remarks">
-                    ここでは、<span>世田谷区の不動産は今が売りどきの理由を土地価格の推移</span>から解説します。世田谷区で不動産売却を考えている方は、ぜひ参考にしてください。
-                </p>
                 <div class="demand__content">
                     <div class="demand__graph">
                         <div class="demand__img">
                             <img src="./assets/images/common/demand-graph.png" alt="東京都の土地の最新売却価格推移">
-                        </div>
-                        <div class="demand-card__source">
-                            <p class="demand-card__source-title">出典元：</p>
-                            <p class="demand-card__source-text">
-                                <a href="https://ieul.jp/tochi/%E6%9D%B1%E4%BA%AC%E9%83%BD/" target="_blank">
-                                    イエウール
-                                </a>
-                            </p>
                         </div>
                     </div>
                     <div class="demand__sentence">
@@ -259,13 +275,15 @@
                             <span>世田谷区の不動産市場は現在、需要が高まっています。</span>特に、三軒茶屋や下北沢のマンション価格は上昇傾向です。成城学園前や経堂などの住宅地も教育環境の良さから注目されています。
                         </p>
                         <p class="demand__text">
-                            低金利政策やテレワークの普及により、住宅購入意欲が高まっており、特に戸建て住宅への需要が増加しています。
-                        </p>
-                        <p class="demand__text">
                             一方で、将来的な人口減少や建築資材の高騰による新規物件の供給減少を考えると、現在の好条件が長く続くとは限りません。そのため、売却を考えている方は、今のタイミングがベストです。
                         </p>
                     </div>
                 </div>
+                <p class="demand__link">
+                    <a href="https://setagaya-realestate.com/301/" target="_blank">
+                        世田谷区の不動産需要について<br class="u-mobile">詳しく知りたい方はこちら
+                    </a>
+                </p>    
             </div>
         </div>
     </section>
@@ -390,10 +408,8 @@
                 </div>
                 <div class="select__sentence">
                     <p class="select__text">
-                        <span>不動産売却の際に、「売却力」のある会社を選ぶことは非常に重要</span>です。<br class="u-mobile">売却力のある不動産会社を選べば、迅速で適正価格での売却が期待できるからです。
+                        <span>不動産売却の際に、「売却力」のある会社を選ぶことは非常に重要</span>です。<br class="u-mobile">ここでは、「売却力」のある不動産会社の選び方を3つにまとめて紹介します。
                     </p>
-                    <p class="select__text">一方、売却力のない不動産会社を選んでしまうと、なかなか売れずに不動産の価値が下がることもあるでしょう。そのため、売却力のある不動産会社選びは、不動産売却における生命線といっても過言ではありません。</p>
-                    <p class="select__text">ここでは、「売却力」のある不動産会社の選び方を3つにまとめて紹介します。</p>
                 </div>
             </div>
 
@@ -411,7 +427,7 @@
                         </div>
                         <div class="select-card__sentence u-desktop">
                             <p class="select-card__text ">
-                                <span>地域密着型の不動産会社を選ぶ際は、まず世田谷区内で長年営業している会社を探すことが重要</span>です。<span class="spacer"></span><br class="u-mobile">地域に根ざした経験が長いほど、地域特性や相場の変動を熟知している可能性が高くなります。また、地元の情報に精通しているかも事前に確認しましょう。<br class="u-mobile">学区や地域の特徴、将来の開発計画など、細かな地域情報を把握している会社が理想的です。さらに、地元の不動産オーナーや企業とのネットワークの広さも重要な要素となります。<br class="u-mobile"><span>地域イベントへの参加や地域貢献活動の実績なども、地域密着度を測る指標</span>となるでしょう。顧客との対面でのコミュニケーションを重視する会社を選ぶことをおすすめします。
+                                <span>地域密着型の不動産会社を選ぶ際は、まず世田谷区内で長年営業している会社を探すことが重要</span>です。<span class="spacer"></span><br class="u-mobile">地域に根ざした経験が長いほど、地域特性や相場の変動を熟知している可能性が高くなります。また、地元の情報に精通しているかも事前に確認しましょう。
                             </p>
                         </div>
                         <div class="select-card__sentence u-mobile">
@@ -423,11 +439,6 @@
                             </p>
                             <p class="select-card__text-sp ">
                                 また、地元の情報に精通しているかも事前に確認しましょう。<br>
-                                学区や地域の特徴、将来の開発計画など、細かな地域情報を把握している会社が理想的です。
-                            </p>
-                            <p class="select-card__text-sp ">
-                                さらに、地元の不動産オーナーや企業とのネットワークの広さも重要な要素となります。<br>
-                                <span>地域イベントへの参加や地域貢献活動の実績なども、地域密着度を測る指標</span>となるでしょう。顧客との対面でのコミュニケーションを重視する会社を選ぶことをおすすめします。
                             </p>
                         </div>
 
@@ -446,28 +457,15 @@
                         </div>
                         <div class="select-card__sentence u-desktop">
                             <p class="select-card__text ">
-                                買取対応可能な不動産会社を選ぶ際は、まず会社の財務状況を確認することが重要です。<span>安定した資金力があるかどうかが、スムーズな買取の鍵</span>となります。次に、買取実績や経験が豊富かどうかを確認しましょう。世田谷区内での買取事例が多い会社は、地域の相場を熟知しており、適正な価格での買取が期待できます。また、買取後の物件の活用計画も重要です。<span>リノベーションや再販の実績がある会社は、より高値での買取に応じる可能性が高く</span>なります。さらに、買取までのスピード感も選択の基準となるでしょう。複数の会社から見積もりを取り、条件を比較検討することをおすすめします。
+                                買取に対応している会社であれば、買主を探す手間が省けるため、契約から短期間で現金化できます。<span>さらに、 不動産会社が提示する買取価格が提示</span>されるため、売却価格が明確になるメリットがあります。
+                            </p>
+                            <p class="select-card__text ">
+                                ただし、買取価格や対象となる物件については、事前にしっかりと確認することが重要です。
                             </p>
                         </div>
-                        <div class="select-card__sentence u-mobile">
-                            <p class="select-card__text-sp ">
-                                買取対応可能な不動産会社を選ぶ際は、まず会社の財務状況を確認することが重要です。<br>
-                                <span>安定した資金力があるかどうかが、スムーズな買取の鍵</span>となります。
-                            </p>
-                            <p class="select-card__text-sp ">
-                                次に、買取実績や経験が豊富かどうかを確認しましょう。世田谷区内での買取事例が多い会社は、地域の相場を熟知しており、適正な価格での買取が期待できます。
-                            </p>
-                            <p class="select-card__text-sp ">
-                                また、買取後の物件の活用計画も重要です。<span>リノベーションや再販の実績がある会社は、より高値での買取に応じる可能性が高く</span>なります。
-                            </p>
-                            <p class="select-card__text-sp">
-                                さらに、買取までのスピード感も選択の基準となるでしょう。複数の会社から見積もりを取り、条件を比較検討することをおすすめします。
-                            </p>
-                        </div>
-
                     </div>
                 </li>
-                <li class="select__item select-card">
+                <li class="select__item select__item--padding select-card">
                     <h3 class="select-card__heading">
                         <div class="select-card__number">
                             <img src="./assets/images/common/select03.png" alt="家とお金の画像">
@@ -480,28 +478,18 @@
                         </div>
                         <div class="select-card__sentence u-desktop">
                             <p class="select-card__text ">
-                                売却力の高い不動産会社を選ぶには、まず<span>過去の実績を確認</span>することが重要です。世田谷区内での売却件数や成約率が高い会社を探しましょう。また、マーケティング力も重要な要素です。自社ウェブサイトやSNSの活用、広告展開の範囲など、物件の露出度を高める能力があるかを確認してください。さらに、大手不動産サイトへの掲載実績や、独自の買主ネットワークを持っているかも調べると良いでしょう。加えて、<span>物件評価の正確さや価格交渉力も売却力の指標</span>として重要です。顧客の評判や口コミも参考になるので、複数の情報源から総合的に判断することをおすすめします。
+                                売却力がある不動産会社を選ぶ理由は、<span>買主との交渉において、売主の利益を最大限に引き出すための交渉をしてくれる</span>可能性が高いからです。
+                            </p>
+                            <p class="select-card__text ">
+                                売却力がある不動産会社にはは、多くの売買実績があり、スムーズな取引を進めるためのノウハウを豊富に蓄積している可能性が高いと言えるでしょう。
                             </p>
                         </div>
-                        <div class="select-card__sentence u-mobile">
-                            <p class="select-card__text-sp ">
-                                売却力の高い不動産会社を選ぶには、まず<span>過去の実績を確認</span>することが重要です。
-                            </p>
-                            <p class="select-card__text-sp ">
-                                世田谷区内での売却件数や成約率が高い会社を探しましょう。また、マーケティング力も重要な要素です。    
-                            </p>
-                            <p class="select-card__text-sp ">
-                                自社ウェブサイトやSNSの活用、広告展開の範囲など、物件の露出度を高める能力があるかを確認してください。     
-                            </p>
-                            <p class="select-card__text-sp ">
-                                さらに、大手不動産サイトへの掲載実績や、独自の買主ネットワークを持っているかも調べると良いでしょう。
-                            </p>
-                            <p class="select-card__text-sp ">
-                                加えて、<span>物件評価の正確さや価格交渉力も売却力の指標</span>として重要です。顧客の評判や口コミも参考になるので、複数の情報源から総合的に判断することをおすすめします。    
-                            </p>
-                        </div>
-
                     </div>
+                    <p class="select-card__link">
+                        <a href="https://setagaya-realestate.com/303/" target="_blank">
+                            売却力のある不動産会社について詳しく知りたい方はこちら
+                        </a>
+                    </p>
                 </li>
             </ul>
         </div>
@@ -528,7 +516,7 @@
                             不動産売却の方法には主に、仲介売却と買取売却があります。仲介売却は、不動産会社を介して一般の買主に売却する方法で、より高値での売却が期待できます。
                         </p>
                         <p class="guidance-pc__text">
-                            例えば、<span>世田谷区の人気エリアである三軒茶屋のマンションなら、複数の買主候補が現れる可能性が高く、価格交渉の余地も生まれます。</span>一方、買取売却は不動産会社が直接購入する方法で、迅速な売却が可能です。
+                            一方、買取売却は不動産会社が直接購入する方法で、迅速な売却が可能です。
                         </p>
                     </div>
                     <div class="guidance-pc__images">
@@ -565,12 +553,6 @@
                         不動産売却の方法には主に、仲介売却と買取売却があります。
                     </p>
                     <p class="guidance-sp__text">
-                        仲介売却は、不動産会社を介して一般の買主に売却する方法で、より高値での売却が期待できます。
-                    </p>
-                    <p class="guidance-sp__text">
-                        例えば、世田谷区の人気エリアである三軒茶屋のマンションなら、複数の買主候補が現れる可能性が高く、価格交渉の余地も生まれます。
-                    </p>
-                    <p class="guidance-sp__text">
                         一方、買取売却は不動産会社が直接購入する方法で、迅速な売却が可能です。
                     </p>
                 </div>
@@ -594,13 +576,12 @@
                             買取がお得なケースとしては、まず急ぎの売却が必要な場合が挙げられます。
                         </p>
                         <p class="topic__text">
-                            例えば、転勤が決まり、数週間以内に引っ越さなければならない状況などです。
+                            さらに、世田谷区内でも需要の少ない立地の物件や、大規模修繕が必要な物件なども、買取を選択すると売却がスムーズに進む可能性が高くなるでしょう。
                         </p>
-                        <p class="topic__text">
-                            また、<span>物件の状態が良くない場合も買取が有利に</span>なることがあります。築古の家や相続した使用頻度の低い物件などが該当します。
-                        </p>
-                        <p class="topic__text">
-                            さらに、世田谷区内でも需要の少ない立地の物件や、大規模修繕が必要な物件なども、買取を選択すると売却がスムーズに進む可能性が高くなります。
+                        <p class="topic__link">
+                            <a href="https://setagaya-realestate.com/150/" target="_blank">
+                                買取について詳しく知りたい方はこちら
+                            </a>
                         </p>
                     </div>
                 </div>
@@ -611,7 +592,7 @@
 
 
     <!-- --------------
-        flow
+        不動産売却における取引の手順
     ------------------>
     <section id="flow" class="flow">
         <div class="flow__heading">
@@ -625,8 +606,7 @@
 
         <div class="flow__inner">
             <div class="flow__head">
-                <p class="flow__head-text">不動産売却において、取引の手順を知っておくことは非常に重要です。</p>
-                <p class="flow__head-text">手順を知っておくことで、自分が積極的に売却活動に参加できたり、迅速な売却がしやすくなります。</p>
+                <p class="flow__head-text">不動産売却において、取引の手順を知っておくことは非常に重要です。手順を知っておくことで、自分が積極的に売却活動に参加できたり、迅速な売却がしやすくなります。</p>
             </div>
 
 
@@ -640,7 +620,7 @@
                         <img src="./assets/images/common/flow1.png" alt="住宅の画像">
                     </div>
                     <p class="flow-card__text">
-                        まず、複数の不動産会社に相談し、市場動向や売却の見通しについて情報を収集します。この段階で、自分の物件の特徴や売却の希望条件を伝え、各社の対応や提案内容を比較します。<span>信頼できる会社を選ぶことが、スムーズな売却のカギ</span>となります。
+                        まず、<span>複数の不動産会社に相談し、市場動向や売却の見通しについて情報</span>を収集します。この段階で、自分の物件の特徴や売却の希望条件を伝え、各社の対応や提案内容を比較します。
                     </p>
                 </li>
                 <li class="flow-cards__item flow-card">
@@ -652,7 +632,7 @@
                         <img src="./assets/images/common/flow2.png" alt="住宅の画像">
                     </div>
                     <p class="flow-card__text">
-                        仲介売却か買取売却か、また地元の不動産会社か大手不動産会社かを選びます。仲介売却は高値が期待できますが時間がかかり、<span>買取売却は迅速ですが価格が抑えられる傾向</span>があります。物件の特性や売却の急ぎ具合に応じて選択しましょう。                    
+                        <span>仲介売却か買取売却か、また地元の不動産会社か大手不動産会社かを選びます。</span>物件の特性や売却の急ぎ具合に応じて選択しましょう。
                     </p>
                 </li>
                 <li class="flow-cards__item flow-card">
@@ -664,7 +644,7 @@
                         <img src="./assets/images/common/flow3.png" alt="住宅の画像">
                     </div>
                     <p class="flow-card__text">
-                        選んだ<span>不動産会社の査定員に物件を確認してもらい、適正な査定額を算出</span>します。査定では、立地、築年数、設備の状態、周辺環境などが考慮されます。複数社の査定を比較し、市場の実勢価格を把握した上で、最終的な売却価格を決定します。
+                        選んだ<span>不動産会社の査定員に物件を確認してもらい、適正な査定額を算出</span>します。複数社の査定を比較し、市場の実勢価格を把握した上で、最終的な売却価格を決定します。
                     </p>
                 </li>
                 <li class="flow-cards__item flow-card">
@@ -676,7 +656,7 @@
                         <img src="./assets/images/common/flow4.png" alt="住宅の画像">
                     </div>
                     <p class="flow-card__text">
-                        売却価格以外の条件を不動産会社と詰めます。物件の引き渡し時期、売主の<span>要望事項</span>（例：引っ越しの期間確保）、<span>特約事項</span>（例：既存の設備の取り扱い）などを具体的に協議します。<span>この段階で細かい点まで合意しておくこと</span>で、後のトラブルを防ぐことができます。                    
+                        売主と買主が、不動産売買契約を<span>締結する前に、物件の価格、引渡し時期、諸費用負担、瑕疵担保責任</span>など、取引に関する様々な条件について確認します。
                     </p>
                 </li>
                 <li class="flow-cards__item flow-card">
@@ -688,7 +668,7 @@
                         <img src="./assets/images/common/flow5.png" alt="住宅の画像">
                     </div>
                     <p class="flow-card__text">
-                        これまでに合意した売買条件を再確認し、<span>重要事項説明書や売買契約書に確認</span>します。内容を十分理解した上で、売主・買主双方が署名捺印をして正式に契約が成立します。契約時に手付金の授受が行われるのが一般的です。
+                        これまでに合意した売買条件を再確認し、<span>重要事項説明書や売買契約書に確認</span>します。内容を十分理解した上で、売主・買主双方が署名捺印をして正式に契約が成立します。
                     </p>
                 </li>
                 <li class="flow-cards__item flow-card">
@@ -700,119 +680,130 @@
                         <img src="./assets/images/common/flow6.png" alt="住宅の画像">
                     </div>
                     <p class="flow-card__text">
-                        不動産売却による収入は原則として課税対象となるため、確定申告が必要です。売却年の翌年の確定申告期間に、譲渡所得の申告を行います。<span>長期譲渡所得か短期譲渡所得かによって税率が異なるため、専門家に相談</span>するのが賢明です。
+                        不動産売却による収入は<span>原則として課税対象となるため、確定申告が必要</span>です。長期譲渡所得か短期譲渡所得かによって税率が異なるため、専門家に相談するのが賢明です。
                     </p>
                 </li>
             </ul>
-            
-            <div class="flow__contract contract">
-                <div class="contract__head">
-                    <p class="contract__head-text">
-                        不動産売却をする際の契約の種類は、<span class="contract__span-red">「一般媒介契約」「専任媒介契約」「専属専任媒介契約」の3種類</span>です。
-                    </p>
-                    <p class="contract__head-text">
-                        契約の特徴は、以下の表を参考にしてください。
-                    </p>
-                </div>
+            <p class="flow__link">
+                <a href="https://setagaya-realestate.com/305/" target="_blank">
+                    不動産売却の取引の手順について詳しく知りたい方はこちら
+                </a>
+            </p>
 
-
-
-
-                <div class="contract__table table">
-                    <div class="table__container">
-                        <table class="table__wrapper">
-                            <thead>
-                                <tr>
-                                    <th></th>
-                                    <th>一般媒介契約</th>
-                                    <th>専任媒介契約</th>
-                                    <th>専属専任媒介契約</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td class="table__center">契約できる不動産会社</td>
-                                    <td>複数社可能</td>
-                                    <td>1社のみ</td>
-                                    <td>1社のみ</td>
-                                </tr>
-                                <tr>
-                                    <td class="table__center">販売活動</td>
-                                    <td class="table__left">積極的に行う<br>幅広い顧客にアプローチ</td>
-                                    <td class="table__left">積極的に行う<br><span class="table__wrapper-weight">物件情報を不動産流通機構（レインズ）に7日以内に登録</span></td>
-                                    <td class="table__left">積極的に行う<br><span class="table__wrapper-weight">物件情報を不動産流通機構（レインズ）に5日以内に登録</span></td>
-                                </tr>
-                                <tr>
-                                    <td class="table__center">状況の報告</td>
-                                    <td>定めなし</td>
-                                    <td>14日に1回以上の報告</td>
-                                    <td>1週間に1回以上の報告</td>
-                                </tr>
-                                <tr>
-                                    <td class="table__center">直接取引<br><span class="table__wrapper-weight">（自分で買主を探す）</span></td>
-                                    <td>可</td>
-                                    <td>可</td>
-                                    <td>不可</td>
-                                </tr>
-                                <tr>
-                                    <td class="table__center">どんな人におすすめ</td>
-                                    <td class="table__left">
-                                        ・できるだけ多くの会社に物件を宣伝してほしい人<br>
-                                        ・複数の選択肢から自分に合った会社を見つけたい人
-                                    </td>
-                                    <td class="table__left">
-                                        ・高額売却を目指したい人<br>
-                                        ・迅速な売却を希望する人
-                                    </td>
-                                    <td class="table__left">
-                                        ・信頼できる不動産会社を知っている<br>
-                                        ・手間をかけたくない人
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                                        
-                </div>
-
-
-
-
-
-                <div class="contract__bottom u-desktop">
-                    <p class="contract__bottom-text">
-                        不動産売却時の契約方式には、<span class="contract__span-red">一般媒介契約、専任媒介契約、専属専任媒介契約の3つ</span>があります。
-                    </p>
-                    <p class="contract__bottom-text">
-                        一般媒介契約は複数の不動産会社と契約でき、広範囲での宣伝が可能です。専任媒介契約は一社のみと契約し、その会社が全力で売却活動を行います。専属専任媒介契約は専任媒介契約に似ていますが、売主自身による直接取引ができません。
-                    </p>
-                    <p class="contract__bottom-text">
-                        <span class="contract__span-pink">一般媒介契約は選択肢が多く、専任と専属専任は迅速な売却が期待できます。ただし、専属専任は買主候補が限定される可能性があります。</span><br>各方式にはメリット・デメリットがあるため、物件の状況や売主の希望に応じて適切な方式を選ぶことが重要です。
-                    </p>
-                </div>
-                <div class="contract__bottom-sp u-mobile">
-                    <p class="contract__bottom-sp-text">
-                        不動産売却時の契約方式には、<span class="contract__span-red">一般媒介契約、専任媒介契約、専属専任媒介契約の3つ</span>があります。
-                    </p>
-                    <p class="contract__bottom-sp-text">
-                        一般媒介契約は複数の不動産会社と契約でき、広範囲での宣伝が可能です。
-                    </p>
-                    <p class="contract__bottom-sp-text">
-                        専任媒介契約は一社のみと契約し、その会社が全力で売却活動を行います。
-                    </p>
-                    <p class="contract__bottom-sp-text">
-                        専属専任媒介契約は専任媒介契約に似ていますが、売主自身による直接取引ができません。
-                    </p>
-                    <p class="contract__bottom-sp-text">
-                        <span class="contract__span-pink">一般媒介契約は選択肢が多く、専任と専属専任は迅速な売却が期待できます。ただし、専属専任は買主候補が限定される可能性があります。</span>
-                    </p>
-                    <p class="contract__bottom-sp-text">
-                        各方式にはメリット・デメリットがあるため、物件の状況や売主の希望に応じて適切な方式を選ぶことが重要です。
-                    </p>
-                </div>
-            </div>
         </div>
     </section>
+
+
+
+    <!-- --------------
+        不動産売却における取引の手順
+    ------------------>
+    <div class="top__contract contract">
+        <div class="contract__inner">
+            <div class="contract__title section-title">
+                <p class="section-title__en">Type&nbsp;of&nbsp;contract</p>
+                <h2 class="section-title__jp">不動産売却における<span class="title-color">契約の種類</span></h2>
+            </div>
+    
+            <div class="contract__head">
+                <p class="contract__head-text">
+                    不動産売却をする際の契約の種類は、<span class="contract__span-red">「一般媒介契約」「専任媒介契約」「専属専任媒介契約」の3種類</span>です。契約の特徴は、以下の表を参考にしてください。
+                </p>
+            </div>
+
+            <div class="contract__table table">
+                <div class="table__container">
+                    <table class="table__wrapper">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>一般媒介契約</th>
+                                <th>専任媒介契約</th>
+                                <th>専属専任媒介契約</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="table__center">契約できる不動産会社</td>
+                                <td>複数社可能</td>
+                                <td>1社のみ</td>
+                                <td>1社のみ</td>
+                            </tr>
+                            <tr>
+                                <td class="table__center">販売活動</td>
+                                <td class="table__left">積極的に行う<br>幅広い顧客にアプローチ</td>
+                                <td class="table__left">積極的に行う<br><span class="table__wrapper-weight">物件情報を不動産流通機構（レインズ）に7日以内に登録</span></td>
+                                <td class="table__left">積極的に行う<br><span class="table__wrapper-weight">物件情報を不動産流通機構（レインズ）に5日以内に登録</span></td>
+                            </tr>
+                            <tr>
+                                <td class="table__center">状況の報告</td>
+                                <td>定めなし</td>
+                                <td>14日に1回以上の報告</td>
+                                <td>1週間に1回以上の報告</td>
+                            </tr>
+                            <tr>
+                                <td class="table__center">直接取引<br><span class="table__wrapper-weight">（自分で買主を探す）</span></td>
+                                <td>可</td>
+                                <td>可</td>
+                                <td>不可</td>
+                            </tr>
+                            <tr>
+                                <td class="table__center">どんな人におすすめ</td>
+                                <td class="table__left">
+                                    ・できるだけ多くの会社に物件を宣伝してほしい人<br>
+                                    ・複数の選択肢から自分に合った会社を見つけたい人
+                                </td>
+                                <td class="table__left">
+                                    ・高額売却を目指したい人<br>
+                                    ・迅速な売却を希望する人
+                                </td>
+                                <td class="table__left">
+                                    ・信頼できる不動産会社を知っている<br>
+                                    ・手間をかけたくない人
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>                                    
+            </div>
+
+            <div class="contract__bottom u-desktop">
+                <p class="contract__bottom-text">
+                    不動産売却時の契約方式には、<span class="contract__span-font">一般媒介契約、専任媒介契約、専属専任媒介契約の3つです。</span>
+                </p>
+                <p class="contract__bottom-text">
+                    一般媒介契約は選択肢が多く、専任と専属専任は迅速な売却が期待できます。ただし、専属専任は買主候補が限定される可能性があります。各方式にはメリット・デメリットがあるため、物件の状況や売主の希望に応じて適切な方式を選ぶことが重要です。
+                </p>
+            </div>
+            <div class="contract__bottom-sp u-mobile">
+                <p class="contract__bottom-sp-text">
+                    不動産売却時の契約方式には、<span class="contract__span-font">一般媒介契約、専任媒介契約、専属専任媒介契約の3つです。</span>
+                </p>
+                <p class="contract__bottom-sp-text">
+                    一般媒介契約は複数の不動産会社と契約でき、広範囲での宣伝が可能です。
+                </p>
+                <p class="contract__bottom-sp-text">
+                    専任媒介契約は一社のみと契約し、その会社が全力で売却活動を行います。
+                </p>
+                <p class="contract__bottom-sp-text">
+                    専属専任媒介契約は専任媒介契約に似ていますが、売主自身による直接取引ができません。
+                </p>
+                <p class="contract__bottom-sp-text">
+                    <span class="contract__span-pink">一般媒介契約は選択肢が多く、専任と専属専任は迅速な売却が期待できます。ただし、専属専任は買主候補が限定される可能性があります。</span>
+                </p>
+                <p class="contract__bottom-sp-text">
+                    各方式にはメリット・デメリットがあるため、物件の状況や売主の希望に応じて適切な方式を選ぶことが重要です。
+                </p>
+            </div>
+
+            <p class="contract__link">
+                <a href="https://setagaya-realestate.com/307/" target="_blank">
+                    不動産売却の契約の種類について詳しく知りたい方はこちら
+                </a>
+            </p>
+
+        </div>
+    </div>
 
 
 
@@ -838,20 +829,17 @@
                 </div>
                 <div class="point__sentence">
                     <p class="point__text ">
-                        不動産売却を成功に導く重要なポイントは、専任媒介契約を結ぶことです。<span>専任媒介契約では、一社の不動産会社が全力で売却活動に取り組むため、効率的かつ効果的な販売戦略が立てられます。</span>
+                        不動産売却を成功に導く重要なポイントは、専任媒介契約を結ぶことです。専任媒介契約では、一社の不動産会社が全力で売却活動に取り組むため、効率的かつ効果的な販売戦略が立てられます。
                     </p>
-                    <br>
-                    <p class="point__text">
-                        例えば、世田谷区の人気エリアである三軒茶屋のマンションを売却する場合、担当者が地域の最新相場を知った上で、適切な価格設定ができるでしょう。
-                    </p>
-                    <br class="u-mobile">
-                    <p class="point__text">
-                        また、専任契約により、不動産会社は高いモチベーションを持って取り組むため、迅速な対応や丁寧な案内が期待できます。
-                    </p>
-                    <br>
                     <p class="point__text">
                         さらに、買主との交渉も一元化されるため、スムーズな売却プロセスが実現しやすくなります。
                     </p>
+                    <p class="point__link">
+                        <a href="https://setagaya-realestate.com/309/" target="_blank">
+                            専任媒介契約について詳しく知りたい方はこちら
+                        </a>
+                    </p>
+    
                 </div>
             </div>
         </div>
@@ -888,7 +876,7 @@
                     <div class="selling-pc__sentence">
                         <h3 class="selling-pc__title">リノベーションの実施</h3>
                         <p class="selling-pc__text">
-                            世田谷区で不動産を高く売るには、まず<span>物件の魅力を最大限に引き出すリノベーションが効果的</span>です。
+                            世田谷区で不動産を高く売るには、まず物件の魅力を最大限に引き出すリノベーションが効果的です。
                         </p>
                         <p class="selling-pc__text">
                             キッチンやバスルームはもちろん、フローリングの張り替えなどで見た目と機能性を向上させましょう。
@@ -903,7 +891,8 @@
                     <div class="selling-pc__sentence">
                         <h3 class="selling-pc__title">物件の周辺環境のPR</h3>
                         <p class="selling-pc__text">
-                            駅やスーパーへのアクセスの良さ、<span>周辺の教育施設や公園などの環境をアピールすることが重要</span>です。世田谷区は住宅地として人気が高いため、これらの要素は買主の関心を引くでしょう。 プロの不動産業者と連携し、適切な価格設定と効果的なマーケティングを行うことも大切です。三軒茶屋や経堂など、<span>人気エリアの特性を活かした販売戦略を立てることも重要</span>です。
+                            駅やスーパーへのアクセスの良さ、周辺の教育施設や公園などの環境をアピールすることが重要です。<br>
+                            世田谷区は住宅地として人気が高いため、これらの要素は買主の関心を引くでしょう。
                         </p>
                     </div>
                 </li>
@@ -918,7 +907,7 @@
                     </div>
                     <div class="selling-sp__sentence">
                         <p class="selling-sp__text">
-                            世田谷区で不動産を高く売るには、まず<span>物件の魅力を最大限に引き出すリノベーションが効果的</span>です。
+                            世田谷区で不動産を高く売るには、まず物件の魅力を最大限に引き出すリノベーションが効果的です。
                         </p>
                         <p class="selling-sp__text">
                             キッチンやバスルームはもちろん、フローリングの張り替えなどで見た目と機能性を向上させましょう。
@@ -932,13 +921,10 @@
                     </div>
                     <div class="selling-sp__sentence">
                         <p class="selling-sp__text">
-                            駅やスーパーへのアクセスの良さ、<span>周辺の教育施設や公園などの環境をアピールすることが重要</span>です。
+                            駅やスーパーへのアクセスの良さ、周辺の教育施設や公園などの環境をアピールすることが重要です。
                         </p>
                         <p class="selling-sp__text">
                             世田谷区は住宅地として人気が高いため、これらの要素は買主の関心を引くでしょう。
-                        </p>
-                        <p class="selling-sp__text">
-                            プロの不動産業者と連携し、適切な価格設定と効果的なマーケティングを行うことも大切です。三軒茶屋や経堂など、<span>人気エリアの特性を活かした販売戦略を立てることも重要</span>です。
                         </p>
                     </div>
                 </li>
@@ -979,8 +965,12 @@
                                 <h3 class="estate-pc__title">地元不動産</h3>
                                 <p class="estate-pc__text">
                                     地元不動産は、地域密着型の丁寧な対応が最大の強みです。<br>
-                                    地域の相場や特性に精通しており、地元顧客とのネットワークを活かした効果的な売却活動が期待できます。<br>
-                                    例えば、世田谷区の特定の物件に詳しい地元不動産なら、その特性を活かした販売戦略を立てられます。一方で、広域での情報発信力が弱く、大規模な広告展開が難しい点がデメリットです。また、取り扱い物件数が限られるため、比較対象が少ない場合もあります。
+                                    地域の相場や特性に精通しており、地元顧客とのネットワークを活かした効果的な売却活動が期待できます。
+                                </p>
+                                <p class="estate-pc__link">
+                                    <a href="https://setagaya-realestate.com/311/" target="_blank">
+                                        地元不動産について詳しく知りたい方はこちら
+                                    </a>
                                 </p>
                             </div>
                         </div>
@@ -991,7 +981,12 @@
                             <div class="estate-pc__sentence">
                                 <h3 class="estate-pc__title">大手不動産</h3>
                                 <p class="estate-pc__text">
-                                    大手不動産の最大の強みは、幅広いネットワークと豊富な顧客層を持つ点です。充実した広告宣伝力により、物件の露出度を高められます。また、企業としての信頼性と安心感、多様な物件情報と比較データを提供できる点もメリットです。一方で、個別対応が少ない可能性があり、地域特有の細かい情報に弱い場合があります。また、手数料が地元不動産より高めの傾向にあるのがデメリットとして挙げられます。                                
+                                    大手不動産の最大の強みは、幅広いネットワークと豊富な顧客層を持つ点です。充実した広告宣伝力により、物件の露出度を高められます。
+                                </p>
+                                <p class="estate-pc__link estate-pc__link--margin">
+                                    <a href="https://setagaya-realestate.com/313/" target="_blank">
+                                        大手不動産について詳しく知りたい方はこちら
+                                    </a>
                                 </p>
                             </div>
                             <div class="estate-pc__img">
@@ -1002,8 +997,7 @@
                 </ul>
                 <div class="estate-pc__bottom">
                     <p class="estate-pc__bottom-text">
-                        不動産売却の際、大手不動産と地元不動産のどちらを選ぶかは、物件の特性や売主の希望によって変わります。大手不動産は全国規模のネットワークと強力な広告力を活かし、幅広い買主にアプローチできる一方、個別対応が少ない傾向があります。地元不動産は地域に密着したきめ細やかなサービスが強みですが、広域での情報発信力に限りがあります。<br>
-                        最終的には、物件の立地や価格帯、売却の緊急性などを考慮し、自分のニーズに合った不動産会社を選ぶことが重要です。
+                        不動産売却の際、大手不動産と地元不動産のどちらを選ぶかは、物件の特性や売主の希望によって変わります。最終的には、物件の立地や価格帯、売却の緊急性などを考慮し、自分のニーズに合った不動産会社を選ぶことが重要です。
                     </p>
                 </div>
             </div>
@@ -1023,11 +1017,10 @@
                             <p class="estate-sp__text">
                                 地域の相場や特性に精通しており、地元顧客とのネットワークを活かした効果的な売却活動が期待できます。
                             </p>
-                            <p class="estate-sp__text">
-                                例えば、世田谷区の特定の物件に詳しい地元不動産なら、その特性を活かした販売戦略を立てられます。
-                            </p>
-                            <p class="estate-sp__text">
-                                一方で、広域での情報発信力が弱く、大規模な広告展開が難しい点がデメリットです。また、取り扱い物件数が限られるため、比較対象が少ない場合もあります。
+                            <p class="estate-pc__link">
+                                <a href="https://setagaya-realestate.com/311/" target="_blank">
+                                    地元不動産について詳しく知りたい方はこちら
+                                </a>
                             </p>
                         </div>
                     </li>
@@ -1044,12 +1037,12 @@
                             <p class="estate-sp__text">
                                 充実した広告宣伝力により、物件の露出度を高められます。また、企業としての信頼性と安心感、多様な物件情報と比較データを提供できる点もメリットです。
                             </p>
-                            <p class="estate-sp__text">
-                                一方で、個別対応が少ない可能性があり、地域特有の細かい情報に弱い場合があります。
+                            <p class="estate-pc__link estate-pc__link--margin">
+                                <a href="https://setagaya-realestate.com/313/" target="_blank">
+                                    大手不動産について詳しく知りたい方はこちら
+                                </a>
                             </p>
-                            <p class="estate-sp__text">
-                                また、手数料が地元不動産より高めの傾向にあるのがデメリットとして挙げられます。
-                            </p>
+
                         </div>
                     </li>
                 </ul>
@@ -1058,14 +1051,9 @@
                         不動産売却の際、大手不動産と地元不動産のどちらを選ぶかは、物件の特性や売主の希望によって変わります。
                     </p>
                     <p class="estate-sp__bottom-text">
-                        大手不動産は全国規模のネットワークと強力な広告力を活かし、幅広い買主にアプローチできる一方、個別対応が少ない傾向があります。
-                    </p>
-                    <p class="estate-sp__bottom-text">
-                        地元不動産は地域に密着したきめ細やかなサービスが強みですが、広域での情報発信力に限りがあります。
-                    </p>
-                    <p class="estate-sp__bottom-text">
                         最終的には、物件の立地や価格帯、売却の緊急性などを考慮し、自分のニーズに合った不動産会社を選ぶことが重要です。
                     </p>
+
                 </div>
 
             </div>
@@ -1123,7 +1111,8 @@
                             </div>
                             <div class="recommendation__textBox-pc u-desktop">
                                 <p class="recommendation__text-pc u-desktop">
-                                    アドバンスライフは、世田谷区を中心に活動する地域密着型の不動産サービスを提供する企業です。最大の強みは、<span>多角的な不動産事業展開による幅広い知見と、それを活かした適正な物件査定能力</span>です。売却時には、リフォームなど<span>購入者にとってメリットのある提案を低価格で提供できるため、成約率が高いのが特徴</span>です。これにより、売主様の物件が速やかに売却につながりやすい環境を整えています。また、地域密着型の営業により蓄積された豊富な情報網を活用し、<span>物件の価値を最大限に引き出す戦略を立案</span>します。相続や空き家問題など、多様な不動産ニーズにも柔軟に対応し、顧客一人ひとりに最適なソリューションを提供しています。
+                                    アドバンスライフは、世田谷区を中心に活動する地域密着型の不動産サービスを提供する企業です。<br>
+                                    最大の強みは、多角的な不動産事業展開による幅広い知見と、それを活かした適正な物件査定能力です。売却時には、リフォームなど購入者にとってメリットのある提案を低価格で提供できるため、成約率が高いのが特徴です。
                                 </p>
                             </div>
     
@@ -1132,16 +1121,7 @@
                                     アドバンスライフは、世田谷区を中心に活動する地域密着型の不動産サービスを提供する企業です。
                                 </p>
                                 <p class="recommendation__text-sp">
-                                    最大の強みは、<span>多角的な不動産事業展開による幅広い知見と、それを活かした適正な物件査定能力</span>です。
-                                </p>
-                                <p class="recommendation__text-sp">
-                                    売却時には、リフォームなど<span>購入者にとってメリットのある提案を低価格で提供できるため、成約率が高いのが特徴</span>です。
-                                </p>
-                                <p class="recommendation__text-sp">
-                                    これにより、売主様の物件が速やかに売却につながりやすい環境を整えています。また、地域密着型の営業により蓄積された豊富な情報網を活用し、<span>物件の価値を最大限に引き出す戦略を立案</span>します。
-                                </p>
-                                <p class="recommendation__text-sp">
-                                    相続や空き家問題など、多様な不動産ニーズにも柔軟に対応し、顧客一人ひとりに最適なソリューションを提供しています。
+                                    最大の強みは、多角的な不動産事業展開による幅広い知見と、それを活かした適正な物件査定能力です。売却時には、リフォームなど購入者にとってメリットのある提案を低価格で提供できるため、成約率が高いのが特徴です。
                                 </p>
                             </div>
     
@@ -1370,25 +1350,17 @@
                             </div>
                             <div class="recommendation__textBox-pc u-desktop">
                                 <p class="recommendation__text-pc u-desktop">
-                                    東急リバブルは全国展開している大手不動産会社です。<span>創業以来の豊富な経験と実績を持ち、不動産売買、賃貸、仲介、管理など幅広いサービスを提供</span>しています。特に首都圏でのネットワークを活かし、多様な物件情報と顧客ニーズをマッチングさせる能力に定評があります。<span>大手ならではの信頼性と安定性に加え、最新のIT技術を駆使した効率的な物件紹介システムも特徴</span>です。例えば、世田谷区の物件であれば、区内の詳細な地域情報と全国規模の顧客ネットワークを組み合わせた戦略的な販売活動が可能です。また、充実した研修制度により、専門知識を持つスタッフが丁寧な対応を行います。
+                                    東急リバブルは全国展開している大手不動産会社です。創業以来の豊富な経験と実績を持ち、不動産売買、賃貸、仲介、管理など幅広いサービスを提供しています。<br>
+                                    大手ならではの信頼性と安定性に加え、最新のIT技術を駆使した効率的な物件紹介システムも特徴です。
                                 </p>
                             </div>
     
                             <div class="recommendation__textBox-sp u-mobile">
                                 <p class="recommendation__text-sp">
-                                    アドバンスライフは、世田谷区を中心に活動する地域密着型の不動産サービスを提供する企業です。
+                                    東急リバブルは全国展開している大手不動産会社です。創業以来の豊富な経験と実績を持ち、不動産売買、賃貸、仲介、管理など幅広いサービスを提供しています。
                                 </p>
                                 <p class="recommendation__text-sp">
-                                    最大の強みは、<span>多角的な不動産事業展開による幅広い知見と、それを活かした適正な物件査定能力</span>です。
-                                </p>
-                                <p class="recommendation__text-sp">
-                                    売却時には、リフォームなど<span>購入者にとってメリットのある提案を低価格で提供できるため、成約率が高いのが特徴</span>です。
-                                </p>
-                                <p class="recommendation__text-sp">
-                                    これにより、売主様の物件が速やかに売却につながりやすい環境を整えています。また、地域密着型の営業により蓄積された豊富な情報網を活用し、<span>物件の価値を最大限に引き出す戦略を立案</span>します。
-                                </p>
-                                <p class="recommendation__text-sp">
-                                    相続や空き家問題など、多様な不動産ニーズにも柔軟に対応し、顧客一人ひとりに最適なソリューションを提供しています。
+                                    大手ならではの信頼性と安定性に加え、最新のIT技術を駆使した効率的な物件紹介システムも特徴です。
                                 </p>
                             </div>
     
@@ -1489,7 +1461,7 @@
                                             <img src="./assets/images/common/recommendation__reviews-woman.png" alt="女性のアイコン">
                                         </div>
                                         <p class="recommendation__reviews-text u-desktop">
-                                            知人から紹介頂いた為他社と比較出来ないのですが、営業の担当者さんはお若いのにしっかりされていて、物腰も柔らかい方でした。購入検討の方が内覧に来られる際は、緊張気味の私の話に毎回フォローを入れて下さり、とても心強かったです。 主人が「うちの会社に来て欲しいな」と呟くくらい、優秀な方でした。素敵な買主様と巡り合わせて下さり感謝です。
+                                            知人から紹介頂いた為他社と比較出来ないのですが、営業の担当者さんはお若いのにしっかりされていて、物腰も柔らかい方でした。購入検討の方が内覧に来られる際は、緊張気味の私の話に毎回フォローを入れて下さり、とても心強かったです。主人が「うちの会社に来て欲しいな」と呟くくらい、優秀な方でした。素敵な買主様と巡り合わせて下さり感謝です。
                                         </p>
     
                                         <div class="recommendation__reviews-textBox u-mobile">

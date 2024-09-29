@@ -18,14 +18,10 @@
 }
 
 .demand__title{
-    background-color: $red;
     font-size: rem(16);
-    padding: rem(9) 0;
     font-weight: $bold;
-    font-family: $toppan;
     @include mq(md){
         font-size: rem(24);
-        padding: rem(12) 0;
     }
 }
 
@@ -41,7 +37,7 @@
 .demand__container{
     padding: rem(40) 0;
     @include mq(md){
-        padding: rem(61) 0 rem(129);
+        padding: rem(62) 0 rem(77);
     } 
 }
 
@@ -61,27 +57,13 @@
     text-emphasis: dot $red;
   }
 
-.demand__remarks{
-    margin-top: rem(20);
-    font-size: rem(16);
-    text-align: left;
-    @include mq(md){
-        margin-top: rem(60);
-        font-size: rem(20);
-    }
-}
-
-.demand__remarks span {
-    font-weight: $bold;
-}
-
 .demand__content{
     margin-top: rem(20);
     @include mq(md){
         display: flex;
         align-items: center;
         gap: 0 rem(83);
-        margin-top: rem(40);
+        margin-top: rem(222);
     }
 }
 
@@ -101,7 +83,7 @@
     line-height: 1.5;
     @include mq(md){
         width: 48.34%;
-        margin-top: 0;
+        margin-top: rem(-13);
         line-height: 2;
         font-size: rem(20);
     }
@@ -110,33 +92,33 @@
 .demand__text + .demand__text{
     margin-top: rem(20);
     @include mq(md){
-        margin-top: rem(30);
+        margin-top: rem(38);
     }
 }
 
 .demand__text span {
     font-size: rem(16);
+    color: $red;
     @include mq(md){
         font-size: rem(22);
         font-weight: $bold;
     }
 }
 
-.demand-card__source{
-    margin-top: rem(10);
-    display: flex;
-    justify-content: center;
-    font-size: rem(9);
-    @include mq(md){
-        font-size: rem(12);
+
+.demand__link{
+    margin-top: rem(40);
+    font-size: rem(16);
+    font-weight: $semiBold;
+    line-height: calc(40/20);
+    text-decoration: underline;
+    @include mq(md) {
+        font-size: rem(20);
+        margin-top: rem(87);
     }
 }
 
-.demand-card__source-text{
-    text-decoration: underline;
-}
-
-.demand-card__source-text a:hover{
+.demand__link a:hover{
+    transition: 0.5s;
     opacity: 0.5;
-    transition: 0.3s;
 }

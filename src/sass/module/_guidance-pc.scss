@@ -22,14 +22,6 @@
     line-height: 2;
 }
 
-.guidance-pc__text span {
-    background-color: $pink;
-    font-size: rem(16);
-    font-weight: $bold;
-    @include mq(md){
-        font-size: rem(20);
-    }
-}
 
 .guidance-pc__sentence{
     width: 50.84%;
@@ -45,7 +37,7 @@
 
 .guidance-pc__comment{
     position: absolute;
-    top: -29%; /* 画像の位置を調整 */
+    top: -31%; /* 画像の位置を調整 */
     left: 17.5%;
     width: rem(119);
     height: rem(117);

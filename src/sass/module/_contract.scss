@@ -1,10 +1,20 @@
 @use "global" as *;
 
+.contract__inner{
+    max-width: $max-width;
+    margin: auto;
+    @include mq(md){
+        max-width: rem(1230);
+        padding: 0 rem(25);
+    }
+}
+
 .contract__head{
     line-height: 1.75;
     padding: 0 rem(25);
     @include mq(md){
         padding: 0;
+        margin-top: rem(40);
     }
 }
 
@@ -59,6 +69,16 @@
 .contract__span-red {
     color: $red;
     font-weight: $bold;
+
+}
+
+.contract__span-font{
+    color: $red;
+    font-weight: $bold;
+    font-size: rem(18);
+    @include mq(md) {
+        font-size: rem(20);
+    }
 }
 
 .contract__span-pink{
@@ -66,3 +86,16 @@
     font-weight: $bold;
 }
 
+.contract__link{
+    text-align: center;
+    margin-top: rem(61);
+    font-size: rem(18);
+    font-weight: $semiBold;
+    line-height: calc(40/18);
+    text-decoration: underline;
+}
+
+.contract__link a:hover{
+    transition: 0.5s;
+    opacity: 0.5;
+}

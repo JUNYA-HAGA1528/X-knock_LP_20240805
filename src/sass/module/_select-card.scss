@@ -27,7 +27,7 @@
     @include mq(md){
         display: flex;
         gap: 0 rem(101);
-        margin-top: rem(60);
+        margin-top: rem(75);
     }
 }
 
@@ -37,7 +37,6 @@
     @include mq(md){
         width: 42.38%;
         height: rem(300);
-        margin-top: rem(20);
     }
 }
 
@@ -69,8 +68,15 @@
     }
 }
 
+.select-card__text + .select-card__text{
+    margin-top: rem(20);
+    @include mq(md) {
+        margin-top: rem(40);
+    }
+}
+
 .select-card__text span {
-    background-color: $pink;
+    color: $red;
     font-size: rem(16);
     font-weight: $bold;
     @include mq(md){
@@ -89,4 +95,19 @@
 
 .select-card__text-sp + .select-card__text-sp{
     margin-top: rem(20);
+}
+
+
+.select-card__link{
+    text-align: center;
+    margin-top: rem(50);
+    font-size: rem(16);
+    font-weight: $semiBold;
+    line-height: calc(40/18);
+    text-decoration: underline;
+}
+
+.select-card__link a:hover{
+    transition: 0.5s;
+    opacity: 0.5;
 }

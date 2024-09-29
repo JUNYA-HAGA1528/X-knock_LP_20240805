@@ -52,16 +52,9 @@
 
 .flow__head-text{
     font-size: rem(16);
+    line-height: calc(40/18);
     @include mq(md){
         font-size: rem(18);
-        letter-spacing: 0.04em;
-    }
-}
-
-.flow__head-text + .flow__head-text{
-    margin-top: rem(20);
-    @include mq(md){
-        margin-top: rem(10);
     }
 }
 
@@ -83,9 +76,16 @@
     }
 }
 
-.flow__contract{
-    margin-top: rem(40);
-    @include mq(md){
-        margin-top: rem(80);
-    }
+.flow__link{
+    text-align: center;
+    margin-top: rem(61);
+    font-size: rem(18);
+    font-weight: $semiBold;
+    line-height: calc(40/18);
+    text-decoration: underline;
+}
+
+.flow__link a:hover{
+    transition: 0.5s;
+    opacity: 0.5;
 }
