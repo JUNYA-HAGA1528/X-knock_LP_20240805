@@ -89,10 +89,14 @@
 .contract__link{
     text-align: center;
     margin-top: rem(61);
-    font-size: rem(18);
+    font-size: rem(16);
     font-weight: $semiBold;
-    line-height: calc(40/18);
+    line-height: calc(26/18);
     text-decoration: underline;
+    @include mq(md) {
+        font-size: rem(18);
+        line-height: calc(40/18);
+    }
 }
 
 .contract__link a:hover{

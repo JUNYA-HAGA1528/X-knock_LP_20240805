@@ -89,7 +89,7 @@
 }
 
 .select-card__text-sp span {
-    background-color: $pink;
+    color: $red;
     font-weight: $bold;
 }
 
@@ -103,8 +103,12 @@
     margin-top: rem(50);
     font-size: rem(16);
     font-weight: $semiBold;
-    line-height: calc(40/18);
+    line-height: calc(26/18);
     text-decoration: underline;
+    @include mq(md) {
+        font-size: rem(18);
+        line-height: calc(40/18);
+    }
 }
 
 .select-card__link a:hover{

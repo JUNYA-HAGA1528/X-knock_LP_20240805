@@ -107,10 +107,13 @@
 .topic__link{
     text-align: center;
     margin-top: rem(72);
-    font-size: rem(18);
+    font-size: rem(16);
     font-weight: $semiBold;
-    line-height: calc(40/18);
+    line-height: calc(26/18);
     text-decoration: underline;
+    @include mq(md) {
+        line-height: calc(40/18);
+    }
 }
 
 .topic__link a:hover{

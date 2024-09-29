@@ -106,11 +106,16 @@
 
 .point__link{
     text-align: center;
-    margin-top: rem(83);
-    font-size: rem(18);
+    margin-top: rem(40);
+    font-size: rem(16);
     font-weight: $semiBold;
-    line-height: calc(40/18);
+    line-height: calc(26/18);
     text-decoration: underline;
+    @include mq(md) {
+        margin-top: rem(83);
+        font-size: rem(18);
+        line-height: calc(40/18);
+    }
 }
 
 .point__link a:hover{

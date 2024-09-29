@@ -91,10 +91,14 @@
 
 .estate-pc__link{
     margin-top: rem(31.5);
-    font-size: rem(18);
+    font-size: rem(16);
     font-weight: $semiBold;
-    line-height: calc(40/18);
+    line-height: calc(26/18);
     text-decoration: underline;
+    @include mq(md) {
+        font-size: rem(18);
+        line-height: calc(40/18);
+    }
 }
 
 .estate-pc__link--margin{
